@@ -1590,6 +1590,17 @@
   </footer>
 
 
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="hidden fixed inset-0 z-[9999] bg-navy/70 backdrop-blur-sm p-4 sm:p-6 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div id="modalPanel" class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white rounded-2xl shadow-2xl border border-brandBorder">
+    <button type="button" onclick="closeModal()" aria-label="Close project details" class="sticky top-0 ml-auto mr-4 mt-4 z-20 w-9 h-9 rounded-full bg-navy text-white hover:bg-gold hover:text-navy transition flex items-center justify-center">
+      <i class="fa-solid fa-xmark text-sm"></i>
+    </button>
+    <div id="modalContent" class="px-6 sm:px-8 pb-8 pt-2"></div>
+  </div>
+</div>
+
+<script>
     const modalData = {
       project1: {
         title: "HERBAL SPA — Brand Identity & Digital Optimization",
@@ -1699,3 +1710,83 @@
       document.getElementById('projectModal').classList.remove('hidden');
     }
 <!-- ... existing code ... -->
+
+// Close project modal
+function closeModal() {
+  const modal = document.getElementById("projectModal");
+  if (modal) modal.classList.add("hidden");
+  document.body.classList.remove("overflow-hidden");
+}
+
+// Close when clicking the backdrop
+document.getElementById("projectModal").addEventListener("click", function (event) {
+  if (event.target === this) closeModal();
+});
+
+// Close with Escape
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") closeModal();
+});
+
+// Project filters
+function filterProjects(category, button) {
+  const cards = document.querySelectorAll(".project-card");
+  const buttons = document.querySelectorAll(".filter-btn");
+
+  buttons.forEach(btn => {
+    btn.classList.remove("bg-navy", "text-white", "shadow-md");
+    btn.classList.add("bg-white", "text-navy", "border", "border-brandBorder");
+  });
+
+  if (button) {
+    button.classList.remove("bg-white", "text-navy", "border", "border-brandBorder");
+    button.classList.add("bg-navy", "text-white", "shadow-md");
+  }
+
+  cards.forEach(card => {
+    const show = category === "all" || card.classList.contains(category);
+    card.classList.toggle("hidden", !show);
+  });
+}
+
+// Mobile navigation
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+  });
+}
+
+// Contact form
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("formSuccessMessage");
+  if (!form) return;
+
+  const inputs = form.querySelectorAll("input[type=\"text\"]");
+  const emailInput = form.querySelector("input[type=\"email\"]");
+  const textarea = form.querySelector("textarea");
+
+  const name = inputs[0] ? inputs[0].value.trim() : "";
+  const subject = inputs[1] ? inputs[1].value.trim() : "";
+  const email = emailInput ? emailInput.value.trim() : "";
+  const message = textarea ? textarea.value.trim() : "";
+
+  const mailSubject = encodeURIComponent(subject || "PR Recruitment / Collaboration Proposal");
+  const mailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+
+  window.location.href = `mailto:tramltb.942@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+
+  if (successMessage) successMessage.classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
