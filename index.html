@@ -2014,437 +2014,236 @@ Brand Marketing · Content · Campaign Strategy
 </div>
 
 <script>
-    const modalData = {
+<!-- ==========================================
+     FEATURED CASE STUDIES
+========================================== -->
+<section id="projects" class="featured-work">
 
-  /* ==========================================
-     PROJECT 01 — HERBAL SPA
-  ========================================== */
+  <div class="featured-container">
 
-  project1: {
+    <!-- HEADER -->
+    <div class="featured-header">
+      <div>
+        <span class="featured-eyebrow">Selected Work</span>
+        <h2>Featured Case Studies</h2>
+      </div>
 
-    title: "HERBAL SPA — Brand Communication & PR",
+      <p>
+        A selection of work across brand communication,
+        PR, media relations and event marketing.
+      </p>
+    </div>
 
-    role: "Marketing Lead",
 
-    time: "08/2025 – Present",
+    <!-- PROJECT GRID -->
+    <div class="featured-grid">
 
-    description:
-      "An integrated brand communication initiative focused on strengthening Herbal Spa’s brand presence, customer-facing experience, PR activities and reputation across digital and partner touchpoints.",
 
-    html: `
-      <div class="space-y-7">
+      <!-- =====================================
+           PROJECT 01 — HERBAL SPA
+      ====================================== -->
+      <article
+        class="featured-card"
+        onclick="openModal('project1')"
+        role="button"
+        tabindex="0"
+        onkeydown="if(event.key === 'Enter' || event.key === ' ') openModal('project1')"
+      >
 
-        <!-- HEADER -->
-        <section>
-          <div class="flex flex-wrap gap-2 mb-4">
+        <div class="featured-image">
 
-            <span class="px-3 py-1 rounded-full bg-gold/10 text-gold-dark text-[10px] font-bold tracking-wider uppercase">
-              Brand Communications
+          <img
+            src="./assets/images/herbal-spa.jpg"
+            alt="Herbal Spa"
+            loading="lazy"
+          >
+
+          <div class="image-overlay"></div>
+
+          <span class="case-number">01</span>
+
+          <div class="image-bottom">
+            <span class="case-category">
+              BRAND · PR · DIGITAL
             </span>
-
-            <span class="px-3 py-1 rounded-full bg-navy/5 text-navy text-[10px] font-bold tracking-wider uppercase">
-              PR & Media
-            </span>
-
-            <span class="px-3 py-1 rounded-full bg-navy/5 text-navy text-[10px] font-bold tracking-wider uppercase">
-              Digital
-            </span>
-
           </div>
 
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-navy leading-snug">
-            Herbal Spa — Brand Communication & PR
+        </div>
+
+
+        <div class="featured-info">
+
+          <span class="info-label">
+            Herbal Spa & Wellness Center
+          </span>
+
+          <h3>
+            Herbal Spa
           </h3>
 
-          <p class="mt-3 text-gray-600 text-xs sm:text-sm leading-relaxed">
-            Strengthening brand communication and customer-facing touchpoints
-            for a multi-branch wellness brand in Da Nang.
-          </p>
-        </section>
+          <div class="featured-meta">
 
-
-        <!-- ROLE -->
-        <section class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-
-          <h4 class="font-serif text-lg font-bold text-navy mb-3">
-            My Role
-          </h4>
-
-          <p class="text-xs text-bodyDark leading-relaxed">
-            As Marketing Lead, I worked across brand communication, PR,
-            digital content, partner communication and reputation management.
-          </p>
-
-        </section>
-
-
-        <!-- SCOPE -->
-        <section>
-
-          <h4 class="font-serif text-lg font-bold text-navy mb-3">
-            Scope & Key Contributions
-          </h4>
-
-          <ul class="list-disc list-outside pl-5 space-y-2 text-xs text-bodyDark">
-
-            <li>
-              Developed key messages and content direction aligned with
-              Herbal Spa’s premium wellness positioning.
-            </li>
-
-            <li>
-              Managed website content, visuals and presentation to maintain
-              brand consistency and improve the customer-facing experience.
-            </li>
-
-            <li>
-              Proposed media outlets and coordinated 50+ PR placements,
-              from cost negotiation and briefing to pre-publication review.
-            </li>
-
-            <li>
-              Managed brand communication across online forums,
-              digital communities, B2B partners and OTA platforms.
-            </li>
-
-            <li>
-              Handled customer complaints and negative reviews,
-              coordinating responses and service recovery.
-            </li>
-
-            <li>
-              Tracked media coverage and prepared performance summaries
-              following PR activities.
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!-- RESULTS -->
-        <div class="grid grid-cols-2 gap-4">
-
-          <div class="bg-navy text-white p-5 rounded-xl text-center">
-
-            <div class="font-serif text-3xl font-bold text-gold-accent">
-              50+
+            <div>
+              <small>ROLE</small>
+              <strong>Marketing Lead</strong>
             </div>
 
-            <div class="text-[10px] uppercase tracking-wider text-slate-300 mt-1">
-              PR Placements
-            </div>
-
-          </div>
-
-
-          <div class="bg-navy text-white p-5 rounded-xl text-center">
-
-            <div class="font-serif text-3xl font-bold text-gold-accent">
-              +25%
-            </div>
-
-            <div class="text-[10px] uppercase tracking-wider text-slate-300 mt-1">
-              Bookings
-            </div>
+            <span class="view-project">
+              View Project →
+            </span>
 
           </div>
 
         </div>
 
-      </div>
-    `
-  },
+      </article>
 
 
-  /* ==========================================
-     PROJECT 02 — CERAVE + VINH TUONG
-  ========================================== */
 
-  project2: {
+      <!-- =====================================
+           PROJECT 02 — CERAVE + VINH TUONG
+      ====================================== -->
+      <article
+        class="featured-card"
+        onclick="openModal('project2')"
+        role="button"
+        tabindex="0"
+        onkeydown="if(event.key === 'Enter' || event.key === ' ') openModal('project2')"
+      >
 
-    title: "CERAVE & VĨNH TƯỜNG — PR & Content",
+        <div class="featured-image client-project-image">
 
-    role: "SEO Specialist (PR & Content)",
+          <div class="client-images">
 
-    time: "01/2024 – 07/2025",
+            <div class="client-image">
+              <img
+                src="./assets/images/cerave.jpg"
+                alt="CeraVe"
+                loading="lazy"
+              >
 
-    description:
-      "Selected client work from TOS Agency, covering PR content development, media placement and client project coordination for brands across different industries.",
+              <div class="client-overlay"></div>
 
-    html: `
-      <div class="space-y-7">
+              <strong>CeraVe</strong>
+            </div>
 
-        <!-- HEADER -->
-        <section>
 
-          <div class="flex flex-wrap gap-2 mb-4">
+            <div class="client-image">
+              <img
+                src="./assets/images/vinh-tuong.jpg"
+                alt="Vĩnh Tường"
+                loading="lazy"
+              >
 
-            <span class="px-3 py-1 rounded-full bg-gold/10 text-gold-dark text-[10px] font-bold tracking-wider uppercase">
-              PR Writing
-            </span>
+              <div class="client-overlay"></div>
 
-            <span class="px-3 py-1 rounded-full bg-navy/5 text-navy text-[10px] font-bold tracking-wider uppercase">
-              Content
-            </span>
-
-            <span class="px-3 py-1 rounded-full bg-navy/5 text-navy text-[10px] font-bold tracking-wider uppercase">
-              Media Relations
-            </span>
+              <strong>Vĩnh Tường</strong>
+            </div>
 
           </div>
 
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-navy leading-snug">
-            CeraVe & Vĩnh Tường — PR & Content
+
+          <span class="case-number">02</span>
+
+          <div class="image-bottom">
+            <span class="case-category">
+              PR · CONTENT · MEDIA
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="featured-info">
+
+          <span class="info-label">
+            TOS Agency · Selected Client Work
+          </span>
+
+          <h3>
+            CeraVe & Vĩnh Tường
           </h3>
 
-          <p class="mt-3 text-gray-600 text-xs sm:text-sm leading-relaxed">
-            Selected client work at TOS Agency, combining PR content,
-            media placement and project coordination across different
-            industries and brand categories.
-          </p>
+          <div class="featured-meta">
 
-        </section>
-
-
-        <!-- CLIENTS -->
-        <section class="grid grid-cols-2 gap-4">
-
-          <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-
-            <div class="text-[10px] uppercase tracking-widest text-gold mb-2">
-              Skincare
+            <div>
+              <small>ROLE</small>
+              <strong>SEO Specialist (PR & Content)</strong>
             </div>
 
-            <h4 class="font-serif text-xl font-bold text-navy">
-              CeraVe
-            </h4>
-
-            <p class="mt-2 text-xs text-bodyDark leading-relaxed">
-              Developed and coordinated PR/content materials
-              supporting brand visibility across digital media.
-            </p>
-
-          </div>
-
-
-          <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-
-            <div class="text-[10px] uppercase tracking-widest text-gold mb-2">
-              Building Materials
-            </div>
-
-            <h4 class="font-serif text-xl font-bold text-navy">
-              Vĩnh Tường
-            </h4>
-
-            <p class="mt-2 text-xs text-bodyDark leading-relaxed">
-              Produced and coordinated content designed to
-              communicate brand and product value through media.
-            </p>
-
-          </div>
-
-        </section>
-
-
-        <!-- SCOPE -->
-        <section>
-
-          <h4 class="font-serif text-lg font-bold text-navy mb-3">
-            Scope & Key Contributions
-          </h4>
-
-          <ul class="list-disc list-outside pl-5 space-y-2 text-xs text-bodyDark">
-
-            <li>
-              Acted as a main project contact between clients,
-              internal teams and media partners.
-            </li>
-
-            <li>
-              Secured 150+ PR and content placements across
-              50+ media outlets and digital platforms.
-            </li>
-
-            <li>
-              Developed product, brand and research-based content
-              for websites and digital publications.
-            </li>
-
-            <li>
-              Prepared content briefs and coordinated revisions
-              to ensure accuracy and brand alignment.
-            </li>
-
-            <li>
-              Managed project timelines, deliverables and
-              day-to-day client communication.
-            </li>
-
-            <li>
-              Compiled press clippings and supported
-              media performance tracking.
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!-- RESULTS -->
-        <div class="grid grid-cols-2 gap-4">
-
-          <div class="bg-navy text-white p-5 rounded-xl text-center">
-
-            <div class="font-serif text-3xl font-bold text-gold-accent">
-              150+
-            </div>
-
-            <div class="text-[10px] uppercase tracking-wider text-slate-300 mt-1">
-              PR Placements
-            </div>
-
-          </div>
-
-
-          <div class="bg-navy text-white p-5 rounded-xl text-center">
-
-            <div class="font-serif text-3xl font-bold text-gold-accent">
-              50+
-            </div>
-
-            <div class="text-[10px] uppercase tracking-wider text-slate-300 mt-1">
-              Media Outlets
-            </div>
+            <span class="view-project">
+              View Project →
+            </span>
 
           </div>
 
         </div>
 
-      </div>
-    `
-  },
+      </article>
 
 
-  /* ==========================================
-     PROJECT 03 — BAO VIET
-  ========================================== */
 
-  project3: {
+      <!-- =====================================
+           PROJECT 03 — BAO VIET
+      ====================================== -->
+      <article
+        class="featured-card"
+        onclick="openModal('project3')"
+        role="button"
+        tabindex="0"
+        onkeydown="if(event.key === 'Enter' || event.key === ' ') openModal('project3')"
+      >
 
-    title: "BẢO VIỆT — Event Communication",
+        <div class="featured-image">
 
-    role: "Marketing & Events Intern",
+          <img
+            src="./assets/images/bao-viet.jpg"
+            alt="Bảo Việt"
+            loading="lazy"
+          >
 
-    time: "06/2023 – 09/2023",
+          <div class="image-overlay"></div>
 
-    description:
-      "Supported marketing and event execution for internal and customer-facing activities, with a focus on communication, logistics and on-site coordination.",
+          <span class="case-number">03</span>
 
-    html: `
-      <div class="space-y-7">
-
-        <!-- HEADER -->
-        <section>
-
-          <div class="flex flex-wrap gap-2 mb-4">
-
-            <span class="px-3 py-1 rounded-full bg-gold/10 text-gold-dark text-[10px] font-bold tracking-wider uppercase">
-              Event Communication
+          <div class="image-bottom">
+            <span class="case-category">
+              EVENTS · COMMUNICATION
             </span>
-
-            <span class="px-3 py-1 rounded-full bg-navy/5 text-navy text-[10px] font-bold tracking-wider uppercase">
-              Event Execution
-            </span>
-
           </div>
-
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-navy leading-snug">
-            Bảo Việt — Event Communication
-          </h3>
-
-          <p class="mt-3 text-gray-600 text-xs sm:text-sm leading-relaxed">
-            Supported customer appreciation events, internal activities
-            and corporate communication initiatives as part of the
-            Marketing & Events team.
-          </p>
-
-        </section>
-
-
-        <!-- ROLE -->
-        <section class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-
-          <h4 class="font-serif text-lg font-bold text-navy mb-3">
-            My Role
-          </h4>
-
-          <p class="text-xs text-bodyDark leading-relaxed">
-            Supported the team across event preparation, guest communication,
-            logistics, on-site execution and post-event documentation.
-          </p>
-
-        </section>
-
-
-        <!-- SCOPE -->
-        <section>
-
-          <h4 class="font-serif text-lg font-bold text-navy mb-3">
-            Scope & Key Contributions
-          </h4>
-
-          <ul class="list-disc list-outside pl-5 space-y-2 text-xs text-bodyDark">
-
-            <li>
-              Supported customer appreciation events,
-              sales training and recognition ceremonies.
-            </li>
-
-            <li>
-              Assisted with invitations, guest communication
-              and participant coordination.
-            </li>
-
-            <li>
-              Supported event logistics and on-site execution.
-            </li>
-
-            <li>
-              Assisted with website and social media content
-              related to marketing activities.
-            </li>
-
-            <li>
-              Managed invoices, expense records and
-              event documentation.
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!-- EXPERIENCE -->
-        <div class="bg-navy text-white p-5 rounded-xl">
-
-          <div class="text-[10px] uppercase tracking-widest text-gold-accent mb-2">
-            Experience
-          </div>
-
-          <div class="font-serif text-xl font-bold">
-            Events · Communication · Execution
-          </div>
-
-          <p class="mt-2 text-xs text-slate-300 leading-relaxed">
-            Hands-on exposure to event planning and execution,
-            complementing PR and brand communication experience.
-          </p>
 
         </div>
 
-      </div>
-    `
-  }
-};
+
+        <div class="featured-info">
+
+          <span class="info-label">
+            Bảo Việt Holdings
+          </span>
+
+          <h3>
+            Bảo Việt
+          </h3>
+
+          <div class="featured-meta">
+
+            <div>
+              <small>ROLE</small>
+              <strong>Marketing & Events Intern</strong>
+            </div>
+
+            <span class="view-project">
+              View Project →
+            </span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
