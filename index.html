@@ -1300,7 +1300,7 @@ body { background-color: #FAF8F5; color: #2D3748; font-family: 'Plus Jakarta San
             </div>
           </section>
         </div>`
-    }
+    },
   function openCaseStudy(projectId) {
     const modal = document.getElementById("caseStudyModal");
     const content = document.getElementById("caseStudyContent");
@@ -1321,15 +1321,3 @@ body { background-color: #FAF8F5; color: #2D3748; font-family: 'Plus Jakarta San
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
   }
-
-  document.addEventListener("click", function(event) {
-    const modal = document.getElementById("caseStudyModal");
-    if (modal && event.target === modal) closeCaseStudy();
-  });
-
-  document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") closeCaseStudy();
-  });
-  </script>
-</body>
-</html>
