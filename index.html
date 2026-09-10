@@ -2113,6 +2113,9 @@ Brand Marketing · Content · Campaign Strategy
 
 </div>
 
+
+<script>
+
 /* =========================
    CASE STUDY DATA
 ========================= */
@@ -2154,7 +2157,6 @@ const modalData = {
 
         </div>
 
-
         <div class="case-study-meta">
 
           <div class="case-study-meta-item">
@@ -2174,7 +2176,6 @@ const modalData = {
 
         </div>
 
-
         <div class="case-study-section">
 
           <h3>Challenge</h3>
@@ -2188,7 +2189,6 @@ const modalData = {
           </p>
 
         </div>
-
 
         <div class="case-study-section">
 
@@ -2228,7 +2228,6 @@ const modalData = {
           </ul>
 
         </div>
-
 
         <div class="case-study-section">
 
@@ -2296,7 +2295,6 @@ const modalData = {
 
         </div>
 
-
         <div class="case-study-meta">
 
           <div class="case-study-meta-item">
@@ -2315,7 +2313,6 @@ const modalData = {
           </div>
 
         </div>
-
 
         <div class="case-study-section">
 
@@ -2347,7 +2344,6 @@ const modalData = {
 
         </div>
 
-
         <div class="case-study-section">
 
           <h3>Selected Clients</h3>
@@ -2363,7 +2359,6 @@ const modalData = {
           </p>
 
         </div>
-
 
         <div class="case-study-section">
 
@@ -2430,7 +2425,6 @@ const modalData = {
 
         </div>
 
-
         <div class="case-study-meta">
 
           <div class="case-study-meta-item">
@@ -2449,7 +2443,6 @@ const modalData = {
           </div>
 
         </div>
-
 
         <div class="case-study-section">
 
@@ -2485,7 +2478,6 @@ const modalData = {
 
         </div>
 
-
         <div class="case-study-section">
 
           <h3>Additional Marketing Support</h3>
@@ -2497,7 +2489,6 @@ const modalData = {
           </p>
 
         </div>
-
 
         <div class="case-study-section">
 
@@ -2536,7 +2527,6 @@ function openCaseStudy(projectId) {
 
   }
 
-
   const data = modalData[projectId];
 
   if (!data) {
@@ -2550,9 +2540,7 @@ function openCaseStudy(projectId) {
 
   }
 
-
   content.innerHTML = data.html;
-
 
   modal.classList.add("is-open");
 
@@ -2560,7 +2548,6 @@ function openCaseStudy(projectId) {
     "aria-hidden",
     "false"
   );
-
 
   document.body.style.overflow = "hidden";
 
@@ -2578,14 +2565,12 @@ function closeCaseStudy() {
 
   if (!modal) return;
 
-
   modal.classList.remove("is-open");
 
   modal.setAttribute(
     "aria-hidden",
     "true"
   );
-
 
   document.body.style.overflow = "";
 
@@ -2635,6 +2620,7 @@ document.addEventListener(
   }
 );
 
+</script>
+
 </body>
-<script>
-</section>
+</html>
