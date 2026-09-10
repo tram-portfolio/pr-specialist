@@ -1300,11 +1300,16 @@ body { background-color: #FAF8F5; color: #2D3748; font-family: 'Plus Jakarta San
             </div>
           </section>
         </div>`
-    },
+} 
+  };
+/* =========================
+     OPEN / CLOSE MODAL FUNCTIONS
+  ========================= */
   function openCaseStudy(projectId) {
     const modal = document.getElementById("caseStudyModal");
     const content = document.getElementById("caseStudyContent");
     if (!modal || !content) return;
+    
     const data = modalData[projectId];
     if (!data) return;
 
@@ -1317,7 +1322,24 @@ body { background-color: #FAF8F5; color: #2D3748; font-family: 'Plus Jakarta San
   function closeCaseStudy() {
     const modal = document.getElementById("caseStudyModal");
     if (!modal) return;
+    
     modal.classList.remove("is-open");
     modal.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
   }
+
+  // Đóng modal khi bấm ra ngoài lớp phủ đen
+  window.addEventListener('click', (e) => {
+    const modal = document.getElementById("caseStudyModal");
+    if (e.target === modal) {
+      closeCaseStudy();
+    }
+  });
+
+  // Đóng modal khi bấm phím Esc
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeCaseStudy();
+    }
+  });
+  </script>
