@@ -785,265 +785,324 @@ body { background-color: #FAF8F5; color: #2D3748; font-family: 'Plus Jakarta San
   period: "01/2024 – 07/2025",
   lead: "Selected client work developed during my time at TOS Agency, combining PR content, media relations, client coordination and publication management.",
   html: `
-<style>:root {
-    --navy: #1a2744;
-    --gold: #c9a84c;
-    --gold-light: #f0e6c8;
-    --bg: #fafaf8;
-    --bg-warm: #f5f3ef;
-    --border: #e8e4dc;
-    --body: #3d3d3d;
-    --muted: #8a8680;
-    --white: #ffffff;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Georgia', serif; background: var(--bg); color: var(--body); font-size: 15px; line-height: 1.6; }
-  .wrap { padding: 2rem; width: 100%; }
-
-  /* HEADER */
-  .eyebrow { font-family:'Arial',sans-serif; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); font-weight:700; }
-  h2 { font-size:2rem; color:var(--navy); font-weight:700; margin-top:.4rem; line-height:1.25; }
-  .lead { font-family:'Arial',sans-serif; font-size:13px; color:var(--muted); margin-top:.6rem; max-width:560px; line-height:1.7; }
-  hr { border:none; border-top:1px solid var(--border); margin:1.5rem 0; }
-
-  /* ROLE STRIP */
-  .role-strip { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--border); border-radius:10px; overflow:hidden; margin-bottom:2.5rem; }
-  .rs-cell { padding:.9rem 1.1rem; background:var(--bg-warm); border-right:1px solid var(--border); font-family:'Arial',sans-serif; }
-  .rs-cell:last-child { border-right:none; }
-  .rs-cell small { display:block; font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:.25rem; }
-  .rs-cell strong { font-size:12px; color:var(--navy); }
-
-  /* SECTION HEADING */
-  .sh { display:flex; align-items:baseline; gap:.6rem; margin-bottom:1.25rem; }
-  .sh-label { font-family:'Arial',sans-serif; font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); font-weight:700; }
-  .sh h3 { font-size:1.05rem; color:var(--navy); font-weight:700; }
-  .section { margin-bottom:2.5rem; }
-
-  /* SCOPE — compact chips */
-  .scope-grid { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; }
-  .scope-card { border:1px solid var(--border); border-radius:10px; padding:.8rem 1rem; background:var(--white); }
-  .scope-card span { font-family:'Arial',sans-serif; font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); font-weight:700; display:block; margin-bottom:.3rem; }
-  .scope-card ul { padding-left:1rem; font-family:'Arial',sans-serif; font-size:11.5px; color:var(--body); line-height:1.65; }
-
-  /* CONTENT TYPES — image grid */
-  .ct-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:.6rem; }
-  .ct-card { border-radius:10px; overflow:hidden; border:1px solid var(--border); background:var(--white); }
-  .ct-img { width:100%; height:130px; object-fit:cover; display:block; }
-  .ct-label { font-family:'Arial',sans-serif; font-size:11.5px; font-weight:700; color:var(--navy); padding:.6rem .8rem .5rem; }
-  .ct-sub { font-family:'Arial',sans-serif; font-size:10px; color:var(--muted); padding:0 .8rem .7rem; line-height:1.45; }
-
-  /* CASE BLOCK */
-  .case-block { border:1px solid var(--border); border-radius:14px; overflow:hidden; margin-bottom:1.25rem; }
-  .case-head { padding:1.1rem 1.4rem; background:var(--bg-warm); border-bottom:1px solid var(--border); display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
-  .case-head h3 { font-size:1.35rem; color:var(--navy); font-weight:700; margin-top:.2rem; }
-  .case-meta { font-family:'Arial',sans-serif; font-size:11px; color:var(--muted); margin-top:.2rem; }
-  .badge { font-family:'Arial',sans-serif; font-size:10px; background:var(--gold-light); color:var(--navy); border-radius:20px; padding:.25rem .8rem; font-weight:700; align-self:center; white-space:nowrap; }
-  .tags { display:flex; flex-wrap:wrap; gap:.35rem; margin-top:.6rem; }
-  .tag { font-family:'Arial',sans-serif; font-size:10px; background:var(--white); border:1px solid var(--border); border-radius:20px; padding:.15rem .65rem; color:var(--body); }
-  .ch-pill { font-family:'Arial',sans-serif; font-size:10px; background:var(--gold-light); color:var(--navy); border-radius:20px; padding:.15rem .7rem; font-weight:600; }
-
-  .case-body { padding:1.25rem 1.4rem; }
-  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
-
-  /* did list */
-  .did { list-style:none; padding:0; font-family:'Arial',sans-serif; font-size:12px; color:var(--body); }
-  .did li { display:flex; gap:.5rem; padding:.35rem 0; border-bottom:1px solid var(--border); line-height:1.5; }
-  .did li:last-child { border-bottom:none; }
-  .did li::before { content:"—"; color:var(--gold); font-weight:700; flex-shrink:0; }
-
-  /* evidence */
-  .ev-grid { display:grid; grid-template-columns:1fr 1fr; gap:.5rem; }
-  .ev-slot { background:var(--bg-warm); border:1px dashed var(--border); border-radius:8px; min-height:90px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:.75rem; }
-  .ev-slot span { font-family:'Arial',sans-serif; font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); font-weight:600; }
-  .ev-slot em { font-family:'Arial',sans-serif; font-size:9px; color:#ccc; margin-top:.2rem; }
-
-  /* REPORTING */
-  .rep-strip { background:var(--navy); border-radius:12px; padding:1.25rem 1.4rem; display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
-  .rep-cell strong { display:block; font-family:'Arial',sans-serif; font-size:11.5px; color:var(--gold-light); margin-bottom:.3rem; }
-  .rep-cell p { font-family:'Arial',sans-serif; font-size:11px; color:rgba(255,255,255,.5); line-height:1.55; }
-
-  @media(max-width:600px){
-    .role-strip,.scope-grid,.ct-grid,.two-col,.ev-grid,.rep-strip{grid-template-columns:1fr;}
-    .rs-cell{border-right:none;border-bottom:1px solid var(--border);}
-    .rs-cell:last-child{border-bottom:none;}
-  }</style>
-<div class="wrap">
-
-  <!-- HEADER -->
-  <div style="margin-bottom:1.4rem">
-    <span class="eyebrow">TOS Agency · Selected Client Work</span>
-    <h2>PR & Content Execution</h2>
-    <p class="lead">Representative work across beauty, FMCG and construction — PR content, media placement and press coverage reporting.</p>
-  </div>
-  <hr>
-
-  <!-- ROLE -->
-  <div class="role-strip">
-    <div class="rs-cell"><small>Role</small><strong>PR & Content Specialist</strong></div>
-    <div class="rs-cell"><small>Period</small><strong>01/2024 – 07/2025</strong></div>
-    <div class="rs-cell"><small>Clients</small><strong>CeraVe · Vĩnh Tường</strong></div>
-  </div>
-
-  <!-- SCOPE -->
-  <div class="section">
-    <div class="sh"><span class="sh-label">Scope</span><h3>What I handled</h3></div>
-    <div class="scope-grid">
-      <div class="scope-card">
-        <span>PR Planning & Content</span>
-        <ul><li>Defined content angles and key messages</li><li>Wrote press releases, features and brand stories</li><li>Edited content before publication</li></ul>
+<div class="case-study-modal-content w-full bg-[#f7f6f3] text-[#18283a]">
+ 
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-8 items-center">
+ 
+      <div>
+        <p class="text-xs tracking-[.25em] uppercase text-[#a98755] font-bold mb-4">
+          Case Study · PR & Content
+        </p>
+        <h1 class="font-serif text-4xl md:text-5xl leading-tight font-bold mb-4">
+          TOS Agency
+        </h1>
+        <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+          SEO Specialist (PR & Content)
+        </p>
+        <p class="mt-4 text-slate-600 leading-7 max-w-2xl text-sm">
+          Selected client work developed during 18 months at TOS Agency — combining PR content writing, media relations, client coordination and press coverage reporting across beauty, FMCG and construction brands.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-medium">01/2024 – 07/2025</span>
+          <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-medium">PR Content</span>
+          <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-medium">Media Relations</span>
+          <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-medium">CeraVe · Vĩnh Tường</span>
+        </div>
       </div>
-      <div class="scope-card">
-        <span>Media Relations</span>
-        <ul><li>Liaised with 50+ editorial contacts</li><li>Coordinated submission, revisions and live publication</li><li>Reviewed articles before going live</li></ul>
+ 
+      <!-- HERO STATS -->
+      <div class="bg-[#f7f4ee] rounded-2xl p-5 border border-[#ddd5c8]">
+        <div class="grid grid-cols-2 gap-px bg-[#ddd5c8] rounded-xl overflow-hidden">
+          <div class="bg-white p-5">
+            <strong class="block font-serif text-3xl text-[#18283a]">150+</strong>
+            <span class="text-xs text-slate-500 mt-1 block">PR & content placements</span>
+          </div>
+          <div class="bg-white p-5">
+            <strong class="block font-serif text-3xl text-[#18283a]">50+</strong>
+            <span class="text-xs text-slate-500 mt-1 block">Media outlets</span>
+          </div>
+          <div class="bg-white p-5">
+            <strong class="block font-serif text-3xl text-[#18283a]">7+</strong>
+            <span class="text-xs text-slate-500 mt-1 block">Brands supported</span>
+          </div>
+          <div class="bg-white p-5">
+            <strong class="block font-serif text-3xl text-[#18283a]">18 mo.</strong>
+            <span class="text-xs text-slate-500 mt-1 block">Agency experience</span>
+          </div>
+        </div>
       </div>
-      <div class="scope-card">
-        <span>Client Coordination</span>
-        <ul><li>Main point of contact for project delivery</li><li>Managed timelines, briefs and daily communication</li></ul>
-      </div>
-      <div class="scope-card">
-        <span>Coverage & Reporting</span>
-        <ul><li>Compiled press clippings and publication records</li><li>Prepared post-campaign media reports</li></ul>
-      </div>
+ 
     </div>
-  </div>
-
-  <!-- CONTENT TYPES -->
-  <div class="section">
-    <div class="sh"><span class="sh-label">Content Formats</span><h3>Types of content produced</h3></div>
-    <div class="ct-grid">
-
-      <div class="ct-card">
-        <img class="ct-img" src="https://www.wordlayouts.com/wp-content/uploads/2022/06/Free-Press-Release-Template-01.jpg" alt="Press Release" onerror="this.style.background='#f0ede8';this.style.height='130px'">
-        <div class="ct-label">Press Release</div>
-        <div class="ct-sub">Product launches, campaign news, brand announcements</div>
-      </div>
-
-      <div class="ct-card">
-        <img class="ct-img" src="https://i.pinimg.com/736x/fa/24/fb/fa24fb2e6ca9e3c43cf68b61c4b3a44d.jpg" alt="Feature Article" onerror="this.style.background='#f0ede8';this.style.height='130px'">
-        <div class="ct-label">Project Feature Article</div>
-        <div class="ct-sub">In-depth editorial covering brand projects and product lines</div>
-      </div>
-
-      <div class="ct-card">
-        <img class="ct-img" src="https://www.wordlayouts.com/wp-content/uploads/2023/03/Market-Research-Report-Template-01.jpg" alt="Market Analysis" onerror="this.style.background='#f0ede8';this.style.height='130px'">
-        <div class="ct-label">Market Analysis</div>
-        <div class="ct-sub">Industry trends, data-backed articles, sector insights</div>
-      </div>
-
-      <div class="ct-card">
-        <img class="ct-img" src="https://bloggingwizard.com/wp-content/uploads/2022/06/thought-leadership-content.png" alt="Thought Leadership" onerror="this.style.background='#f0ede8';this.style.height='130px'">
-        <div class="ct-label">Thought Leadership</div>
-        <div class="ct-sub">Executive opinion pieces for brand authority building</div>
-      </div>
-
-      <div class="ct-card">
-        <img class="ct-img" src="https://i.pinimg.com/736x/af/ae/c5/afaec58f0e9e60a5d745ee53bb49e547.jpg" alt="Brand Story" onerror="this.style.background='#f0ede8';this.style.height='130px'">
-        <div class="ct-label">Brand & Human-Interest Story</div>
-        <div class="ct-sub">Narrative content for consumer and lifestyle media</div>
-      </div>
-
-      <div class="ct-card">
-        <img class="ct-img" src="https://www.wordlayouts.com/wp-content/uploads/2022/07/Free-Website-Copywriting-Template-01.jpg" alt="Website Content" onerror="this.style.background='#f0ede8';this.style.height='130px'">
-        <div class="ct-label">Website & Digital Content</div>
-        <div class="ct-sub">On-site editorial, product copy and digital PR content</div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- CASES -->
-  <div class="section">
-    <div class="sh"><span class="sh-label">Case Studies</span><h3>Client work in detail</h3></div>
-
-    <!-- VĨNH TƯỜNG -->
-    <div class="case-block">
-      <div class="case-head">
+  </section>
+ 
+  <!-- 01 — WHAT I HANDLED -->
+  <section class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-[.7fr_1.3fr] gap-8">
         <div>
-          <span class="eyebrow">Case 01 · Construction Materials</span>
-          <h3>Vĩnh Tường</h3>
-          <p class="case-meta">PR Content · Media Placement · Client Coordination</p>
-          <div class="tags">
-            <span class="tag">Project features</span>
-            <span class="tag">Industry analysis</span>
-            <span class="tag">Brand news</span>
-            <span class="ch-pill">Construction media</span>
-            <span class="ch-pill">News portals</span>
-            <span class="ch-pill">B2B trade press</span>
+          <p class="tracking-[.12em] text-xs font-bold text-[#9a8060]">01</p>
+          <h2 class="font-serif text-2xl md:text-3xl font-bold mt-1">What I handled</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="p-4 bg-[#f7f6f3] rounded-xl">
+            <p class="font-semibold text-sm">PR Planning & Content</p>
+            <p class="text-xs text-slate-500 mt-1">Defined content angles, wrote press releases, features and brand stories, edited before publication.</p>
+          </div>
+          <div class="p-4 bg-[#f7f6f3] rounded-xl">
+            <p class="font-semibold text-sm">Media Relations</p>
+            <p class="text-xs text-slate-500 mt-1">Liaised with 50+ editorial contacts, coordinated submission, revisions and live publication.</p>
+          </div>
+          <div class="p-4 bg-[#f7f6f3] rounded-xl">
+            <p class="font-semibold text-sm">Client Coordination</p>
+            <p class="text-xs text-slate-500 mt-1">Main point of contact — managed timelines, briefs and daily communication.</p>
+          </div>
+          <div class="p-4 bg-[#f7f6f3] rounded-xl">
+            <p class="font-semibold text-sm">Coverage & Reporting</p>
+            <p class="text-xs text-slate-500 mt-1">Compiled press clippings and prepared post-campaign media reports.</p>
           </div>
         </div>
-        <span class="badge">Selected project</span>
       </div>
-      <div class="case-body">
-        <div class="two-col">
-          <div>
-            <ul class="did">
-              <li>Developed content angles aligned with campaign brief</li>
-              <li>Wrote and edited project features and brand stories</li>
-              <li>Coordinated placement with construction and trade media</li>
-              <li>Reviewed articles before publication</li>
-              <li>Compiled press clippings and coverage reports</li>
+    </div>
+  </section>
+ 
+  <!-- 02 — CONTENT TYPES -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="max-w-2xl mb-8">
+      <p class="tracking-[.12em] text-xs font-bold text-[#9a8060]">02 · CONTENT FORMATS</p>
+      <h2 class="font-serif text-3xl font-bold mt-2">Types of content produced</h2>
+      <p class="text-slate-600 mt-3 text-sm leading-6">
+        Across clients and campaigns, I produced and edited multiple content formats — each serving a different PR objective and media context.
+      </p>
+    </div>
+ 
+    <div class="grid md:grid-cols-3 gap-6">
+ 
+      <article class="bg-white rounded-2xl overflow-hidden border border-slate-200">
+        <div class="h-44 bg-[#f7f4ee] border-b border-[#ddd5c8] overflow-hidden">
+          <img src="https://www.wordlayouts.com/wp-content/uploads/2022/06/Free-Press-Release-Template-01.jpg"
+               alt="Press Release" class="w-full h-full object-cover"
+               onerror="this.parentElement.style.background='#f0ede8'">
+        </div>
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Format 01</p>
+          <h3 class="text-base font-bold mt-1">Press Release</h3>
+          <p class="text-slate-500 text-xs leading-5 mt-2">Product launches, campaign announcements, brand news for media distribution.</p>
+        </div>
+      </article>
+ 
+      <article class="bg-white rounded-2xl overflow-hidden border border-slate-200">
+        <div class="h-44 bg-[#f7f4ee] border-b border-[#ddd5c8] overflow-hidden">
+          <img src="https://i.pinimg.com/736x/fa/24/fb/fa24fb2e6ca9e3c43cf68b61c4b3a44d.jpg"
+               alt="Feature Article" class="w-full h-full object-cover"
+               onerror="this.parentElement.style.background='#f0ede8'">
+        </div>
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Format 02</p>
+          <h3 class="text-base font-bold mt-1">Project Feature Article</h3>
+          <p class="text-slate-500 text-xs leading-5 mt-2">In-depth editorial covering brand projects, product lines and industry context.</p>
+        </div>
+      </article>
+ 
+      <article class="bg-white rounded-2xl overflow-hidden border border-slate-200">
+        <div class="h-44 bg-[#f7f4ee] border-b border-[#ddd5c8] overflow-hidden">
+          <img src="https://www.wordlayouts.com/wp-content/uploads/2023/03/Market-Research-Report-Template-01.jpg"
+               alt="Market Analysis" class="w-full h-full object-cover"
+               onerror="this.parentElement.style.background='#f0ede8'">
+        </div>
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Format 03</p>
+          <h3 class="text-base font-bold mt-1">Market Analysis</h3>
+          <p class="text-slate-500 text-xs leading-5 mt-2">Industry trends, data-backed articles and sector insights.</p>
+        </div>
+      </article>
+ 
+      <article class="bg-white rounded-2xl overflow-hidden border border-slate-200">
+        <div class="h-44 bg-[#f7f4ee] border-b border-[#ddd5c8] overflow-hidden">
+          <img src="https://bloggingwizard.com/wp-content/uploads/2022/06/thought-leadership-content.png"
+               alt="Thought Leadership" class="w-full h-full object-cover"
+               onerror="this.parentElement.style.background='#f0ede8'">
+        </div>
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Format 04</p>
+          <h3 class="text-base font-bold mt-1">Thought Leadership</h3>
+          <p class="text-slate-500 text-xs leading-5 mt-2">Executive opinion pieces for brand authority and positioning.</p>
+        </div>
+      </article>
+ 
+      <article class="bg-white rounded-2xl overflow-hidden border border-slate-200">
+        <div class="h-44 bg-[#f7f4ee] border-b border-[#ddd5c8] overflow-hidden">
+          <img src="https://i.pinimg.com/736x/af/ae/c5/afaec58f0e9e60a5d745ee53bb49e547.jpg"
+               alt="Brand Story" class="w-full h-full object-cover"
+               onerror="this.parentElement.style.background='#f0ede8'">
+        </div>
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Format 05</p>
+          <h3 class="text-base font-bold mt-1">Brand & Human-Interest Story</h3>
+          <p class="text-slate-500 text-xs leading-5 mt-2">Narrative content for consumer and lifestyle media.</p>
+        </div>
+      </article>
+ 
+      <article class="bg-white rounded-2xl overflow-hidden border border-slate-200">
+        <div class="h-44 bg-[#f7f4ee] border-b border-[#ddd5c8] overflow-hidden">
+          <img src="https://www.wordlayouts.com/wp-content/uploads/2022/07/Free-Website-Copywriting-Template-01.jpg"
+               alt="Website Content" class="w-full h-full object-cover"
+               onerror="this.parentElement.style.background='#f0ede8'">
+        </div>
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Format 06</p>
+          <h3 class="text-base font-bold mt-1">Website & Digital Content</h3>
+          <p class="text-slate-500 text-xs leading-5 mt-2">On-site editorial, product copy and digital PR content.</p>
+        </div>
+      </article>
+ 
+    </div>
+  </section>
+ 
+  <!-- 03 — CASE STUDIES -->
+  <section class="bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="max-w-2xl mb-8">
+        <p class="tracking-[.12em] text-xs font-bold text-[#9a8060]">03 · CLIENT WORK</p>
+        <h2 class="font-serif text-3xl font-bold mt-2">Client work in detail</h2>
+      </div>
+ 
+      <div class="grid md:grid-cols-2 gap-6">
+ 
+        <!-- VĨNH TƯỜNG -->
+        <article class="bg-[#f7f6f3] rounded-2xl overflow-hidden border border-slate-200">
+          <div class="p-6 border-b border-slate-200">
+            <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Case 01 · Construction Materials</p>
+            <h3 class="text-xl font-bold font-serif mt-1">Vĩnh Tường</h3>
+            <p class="text-xs text-slate-500 mt-1">PR Content · Media Placement · Client Coordination</p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-full text-[10px]">Project features</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-full text-[10px]">Industry analysis</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-full text-[10px]">Brand news</span>
+              <span class="px-2.5 py-1 bg-[#f0e6c8] text-[#18283a] rounded-full text-[10px] font-semibold">Construction media</span>
+              <span class="px-2.5 py-1 bg-[#f0e6c8] text-[#18283a] rounded-full text-[10px] font-semibold">News portals</span>
+              <span class="px-2.5 py-1 bg-[#f0e6c8] text-[#18283a] rounded-full text-[10px] font-semibold">B2B trade press</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <ul class="space-y-2">
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Developed content angles aligned with campaign brief</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Wrote and edited project features and brand stories</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Coordinated placement with construction and trade media</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Reviewed articles before publication</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Compiled press clippings and coverage reports</li>
             </ul>
+            <div class="grid grid-cols-2 gap-2 mt-5">
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Client Brief</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Content Draft</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Published Article</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Clipping Report</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+            </div>
           </div>
-          <div class="ev-grid">
-            <div class="ev-slot"><span>Client Brief</span><em>Insert screenshot</em></div>
-            <div class="ev-slot"><span>Content Draft</span><em>Insert screenshot</em></div>
-            <div class="ev-slot"><span>Published Article</span><em>Insert screenshot</em></div>
-            <div class="ev-slot"><span>Clipping Report</span><em>Insert screenshot</em></div>
+        </article>
+ 
+        <!-- CERAVE -->
+        <article class="bg-[#f7f6f3] rounded-2xl overflow-hidden border border-slate-200">
+          <div class="p-6 border-b border-slate-200">
+            <p class="text-xs uppercase tracking-widest text-[#a98755] font-bold">Case 02 · Beauty / FMCG</p>
+            <h3 class="text-xl font-bold font-serif mt-1">CeraVe</h3>
+            <p class="text-xs text-slate-500 mt-1">Content Review · Brand Consistency · Digital Execution</p>
+            <div class="flex flex-wrap gap-1.5 mt-3">
+              <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-full text-[10px]">Product education</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-full text-[10px]">Ingredient explainers</span>
+              <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-full text-[10px]">Skincare how-to</span>
+              <span class="px-2.5 py-1 bg-[#f0e6c8] text-[#18283a] rounded-full text-[10px] font-semibold">Beauty & lifestyle media</span>
+              <span class="px-2.5 py-1 bg-[#f0e6c8] text-[#18283a] rounded-full text-[10px] font-semibold">Health portals</span>
+              <span class="px-2.5 py-1 bg-[#f0e6c8] text-[#18283a] rounded-full text-[10px] font-semibold">Brand website</span>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CERAVE -->
-    <div class="case-block">
-      <div class="case-head">
-        <div>
-          <span class="eyebrow">Case 02 · Beauty / FMCG</span>
-          <h3>CeraVe</h3>
-          <p class="case-meta">Content Review · Brand Consistency · Digital Execution</p>
-          <div class="tags">
-            <span class="tag">Product education</span>
-            <span class="tag">Ingredient explainers</span>
-            <span class="tag">Skincare how-to</span>
-            <span class="ch-pill">Beauty & lifestyle media</span>
-            <span class="ch-pill">Health portals</span>
-            <span class="ch-pill">Brand website</span>
-          </div>
-        </div>
-        <span class="badge">Selected project</span>
-      </div>
-      <div class="case-body">
-        <div class="two-col">
-          <div>
-            <ul class="did">
-              <li>Wrote product education and brand story content</li>
-              <li>Reviewed articles for brand voice before going live</li>
-              <li>Checked ingredient claims and medical accuracy</li>
-              <li>Coordinated with beauty and health media</li>
-              <li>Tracked coverage and compiled clipping reports</li>
+          <div class="p-6">
+            <ul class="space-y-2">
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Wrote product education and brand story content</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Reviewed articles for brand voice before going live</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Checked ingredient claims and medical accuracy</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Coordinated with beauty and health media</li>
+              <li class="flex gap-2 text-xs text-slate-600 leading-5"><span class="text-[#a98755] font-bold flex-shrink-0">—</span>Tracked coverage and compiled clipping reports</li>
             </ul>
+            <div class="grid grid-cols-2 gap-2 mt-5">
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Content Angle</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Content Review</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Published Article</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+              <div class="bg-white border border-dashed border-slate-300 rounded-xl min-h-[80px] flex flex-col items-center justify-center text-center p-3">
+                <span class="text-[9px] uppercase tracking-widest text-slate-400 font-semibold">Clipping Report</span>
+                <em class="text-[9px] text-slate-300 mt-1">Insert screenshot</em>
+              </div>
+            </div>
           </div>
-          <div class="ev-grid">
-            <div class="ev-slot"><span>Content Angle</span><em>Insert screenshot</em></div>
-            <div class="ev-slot"><span>Content Review</span><em>Insert screenshot</em></div>
-            <div class="ev-slot"><span>Published Article</span><em>Insert screenshot</em></div>
-            <div class="ev-slot"><span>Clipping Report</span><em>Insert screenshot</em></div>
-          </div>
-        </div>
+        </article>
+ 
       </div>
     </div>
-  </div>
-
-  <!-- REPORTING -->
-  <div class="section">
-    <div class="sh"><span class="sh-label">Reporting</span><h3>Coverage & media reporting</h3></div>
-    <div class="rep-strip">
-      <div class="rep-cell"><strong>Press Clipping</strong><p>Collected published coverage with source, date and article links.</p></div>
-      <div class="rep-cell"><strong>Media Monitoring</strong><p>Tracked publication status and flagged post-publication changes.</p></div>
-      <div class="rep-cell"><strong>Client Report</strong><p>Consolidated coverage into structured post-campaign reports.</p></div>
+  </section>
+ 
+  <!-- 04 — WORKFLOW -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid lg:grid-cols-[.7fr_1.3fr] gap-10">
+      <div>
+        <p class="tracking-[.12em] text-xs font-bold text-[#9a8060]">04</p>
+        <h2 class="font-serif text-3xl font-bold mt-2">From brief<br>to coverage</h2>
+        <p class="text-slate-600 mt-4 text-sm leading-6">
+          Each placement followed a consistent workflow — from clarifying the brief through to compiling the final press clipping.
+        </p>
+      </div>
+ 
+      <div class="space-y-8">
+ 
+        <div class="relative pl-10 border-l-2 border-[#d8d0c2]">
+          <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-[#a98755] text-white flex items-center justify-center text-xs font-bold">01</div>
+          <h3 class="font-bold text-base">Brief & Direction</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-5">Clarified campaign objectives, target audience and key messages. Defined suitable content angle and media context.</p>
+        </div>
+ 
+        <div class="relative pl-10 border-l-2 border-[#d8d0c2]">
+          <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-[#a98755] text-white flex items-center justify-center text-xs font-bold">02</div>
+          <h3 class="font-bold text-base">Content Writing & Editing</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-5">Wrote and edited the content — press releases, feature articles, brand stories or thought-leadership pieces — aligned with brief and brand voice.</p>
+        </div>
+ 
+        <div class="relative pl-10 border-l-2 border-[#d8d0c2]">
+          <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-[#a98755] text-white flex items-center justify-center text-xs font-bold">03</div>
+          <h3 class="font-bold text-base">Media Placement</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-5">Coordinated submission with editorial contacts, managed revisions and confirmed live publication.</p>
+        </div>
+ 
+        <div class="relative pl-10">
+          <div class="absolute -left-[17px] top-0 w-8 h-8 rounded-full bg-[#a98755] text-white flex items-center justify-center text-xs font-bold">04</div>
+          <h3 class="font-bold text-base">Reporting</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-5">Compiled press clippings, tracked publication status and prepared post-campaign media reports for client review.</p>
+        </div>
+ 
+      </div>
     </div>
-  </div>
-
+  </section>
+ 
 </div>
   `
 },
