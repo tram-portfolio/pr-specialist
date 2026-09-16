@@ -785,558 +785,499 @@ tos: {
   period: "01/2024 – 07/2025",
   lead: "Selected client work developed during my time at TOS Agency, combining PR content, media relations, client coordination and publication management.",
   html: `
-    <div class="case-study p-8">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOS Agency — Vĩnh Tường & CeraVe | PR & Content Case Study</title>
+    <style>
+      :root{
+        --ink:#1d1c1a; --muted:#746f67; --paper:#f7f4ee; --card:#fffdf9;
+        --line:#ded8ce; --accent:#8b6f47; --soft:#eee8dd;
+      }
+      *{box-sizing:border-box}
+      body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.55}
+      .wrap{max-width:1180px;margin:auto;padding:0 34px}
+      .hero{padding:76px 0 62px;border-bottom:1px solid var(--line)}
+      .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700}
+      h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,76px);line-height:.98;font-weight:500;max-width:850px;margin:18px 0}
+      .lead{font-size:19px;color:#504b44;max-width:760px}
+      .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+      .pill{border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-size:13px;background:#fbf9f4}
 
-      <!-- HEADER -->
-      <div class="case-study-header mb-7">
-        <span class="text-xs font-bold text-gold uppercase tracking-widest">
-          TOS Agency · Selected Client Work
-        </span>
+      .client-strip{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:42px}
+      .client-card{position:relative;min-height:180px;background:var(--card);border:1px solid var(--line);padding:28px 30px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+      .client-card:after{content:"";position:absolute;right:-35px;bottom:-55px;width:150px;height:150px;border:1px solid #d7d0c4;border-radius:50%}
+      .client-card .label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700}
+      .client-logo{font-family:Georgia,serif;font-size:34px;letter-spacing:-.03em;margin:18px 0 4px}
+      .client-logo.cerave{font-family:Arial,sans-serif;font-weight:500;letter-spacing:-.04em}
+      .client-meta{font-size:12px;color:var(--muted)}
+      .hero-proof{display:flex;align-items:center;gap:14px;margin-top:25px;font-size:12px;color:var(--muted)}
+      .hero-proof .dot{width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block}
 
-        <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy mt-2">
-          PR & Content Execution
-        </h2>
+      .numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin:48px 0 0}
+      .num{background:var(--paper);padding:24px}
+      .num strong{font-family:Georgia,serif;font-size:40px;font-weight:500;display:block}
+      .num span{color:var(--muted);font-size:13px}
+      section{padding:70px 0;border-bottom:1px solid var(--line)}
+      .grid2{display:grid;grid-template-columns:1fr 1.7fr;gap:60px}
+      h2{font-family:Georgia,serif;font-size:40px;font-weight:500;line-height:1.05;margin:0 0 18px}
+      h3{font-size:18px;margin:0 0 8px}
+      p{margin:0 0 14px;color:#514d47}
+      .small{font-size:13px;color:var(--muted)}
+      .role-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+      .role{background:var(--card);border:1px solid var(--line);padding:20px}
+      .role b{display:block;margin-bottom:5px}
+      .process{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:25px}
+      .step{background:var(--card);border:1px solid var(--line);padding:18px;min-height:118px;position:relative}
+      .step .n{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:.1em}
+      .step b{display:block;margin:8px 0 4px}
+      .project{margin-top:28px;background:var(--card);border:1px solid var(--line);padding:32px}
+      .project-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:26px}
+      .brand{font-family:Georgia,serif;font-size:31px}
+      .tag{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+      .split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+      .evidence{margin-top:26px}
+      .evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+      figure{margin:0;background:#e9e4da;border:1px solid var(--line);overflow:hidden}
+      figure img{width:100%;height:210px;object-fit:cover;display:block}
+      figcaption{padding:12px;font-size:12px;color:#655f57;background:var(--card)}
+      .mock{height:210px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(135deg,#f1ede5,#ded6c8)}
+      .mock .site{width:84%;background:white;border:1px solid #d9d3c9;box-shadow:0 8px 22px #0000000b}
+      .mock .top{height:24px;background:#f3f0ea;border-bottom:1px solid #ddd7ce}
+      .mock .headline{font-family:Georgia,serif;font-size:17px;padding:18px 13px 8px}
+      .mock .body{font-size:8px;color:#999;padding:0 16px 18px}
+      .matrix{width:100%;border-collapse:collapse;margin-top:20px;font-size:13px}
+      .matrix th,.matrix td{border-bottom:1px solid var(--line);text-align:left;padding:14px 10px;vertical-align:top}
+      .matrix th{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+      .timeline{border-left:1px solid var(--line);margin:25px 0 0 8px}
+      .tl{padding:0 0 27px 28px;position:relative}
+      .tl:before{content:"";position:absolute;width:9px;height:9px;border:2px solid var(--accent);background:var(--paper);border-radius:50%;left:-6px;top:5px}
+      .tl b{display:block}
+      .quote{border-left:3px solid var(--accent);padding:8px 0 8px 22px;font-family:Georgia,serif;font-size:24px;line-height:1.3;margin:25px 0}
+      .proof{background:#211f1c;color:#f8f3ea;padding:32px;margin-top:28px}
+      .proof p{color:#d8d1c6}
+      .proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+      .proof-item{border:1px solid #504b45;padding:16px}
+      .proof-item strong{display:block;font-size:23px;font-family:Georgia,serif}
+      .footer{padding:55px 0 80px}
+      .cta{display:flex;justify-content:space-between;gap:30px;align-items:center}
+      .cta h2{max-width:650px}
+      .note{font-size:11px;color:#8a8378;margin-top:25px}
+      @media(max-width:800px){
+        .wrap{padding:0 20px}.grid2,.split{grid-template-columns:1fr}.numbers{grid-template-columns:1fr}
+        .client-strip{grid-template-columns:1fr}
+        .client-card{min-height:145px}
+        .process{grid-template-columns:1fr 1fr}.evidence-grid{grid-template-columns:1fr}.proof-grid{grid-template-columns:1fr 1fr}
+        .project-head,.cta{display:block}
+      }
+    </style>
+    </head>
+    <body>
 
-        <p class="text-sm text-bodyDark mt-3 max-w-2xl leading-6">
-          Representative work across beauty, FMCG and construction, covering
-          PR content development, media placement, client coordination,
-          publication review and press coverage reporting.
+    <header class="hero">
+      <div class="wrap">
+        <div class="eyebrow">TOS Agency · Selected Client Work</div>
+
+        <h1>Vĩnh Tường × CeraVe<br><span style="font-size:.62em">PR & Content</span></h1>
+
+        <p class="lead">
+          Selected client work demonstrating how I translated brand briefs into media opportunities,
+          developed and coordinated content, managed publication workflows and reported coverage.
         </p>
+
+        <div class="meta">
+          <span class="pill">SEO Specialist · PR & Content</span>
+          <span class="pill">TOS Agency · 01/2024–07/2025</span>
+          <span class="pill">Client-facing project coordination</span>
+        </div>
+
+        <div class="client-strip">
+          <div class="client-card">
+            <div class="label">Selected client · 01</div>
+            <div>
+              <div class="client-logo">Vĩnh Tường</div>
+              <div class="client-meta">Construction · Architecture · Home</div>
+            </div>
+          </div>
+
+          <div class="client-card">
+            <div class="label">Selected client · 02</div>
+            <div>
+              <div class="client-logo cerave">CeraVe</div>
+              <div class="client-meta">Skincare · Beauty · Consumer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-proof">
+          <span class="dot"></span>
+          <span>Selected examples from a broader client portfolio</span>
+        </div>
+
+        <div class="numbers">
+          <div class="num"><strong>150+</strong><span>PR & content placements across my client portfolio</span></div>
+          <div class="num"><strong>50+</strong><span>media outlets & digital platforms</span></div>
+          <div class="num"><strong>7+</strong><span>brands supported</span></div>
+        </div>
       </div>
+    </header>
 
-
-      <!-- KEY PROOF -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-slate-200 rounded-xl overflow-hidden mb-8">
-
-        <div class="bg-brandBg p-5">
-          <strong class="block font-serif text-3xl text-navy">150+</strong>
-          <span class="text-xs text-slate-500 block mt-1">
-            PR & content placements
-          </span>
-        </div>
-
-        <div class="bg-brandBg p-5">
-          <strong class="block font-serif text-3xl text-navy">50+</strong>
-          <span class="text-xs text-slate-500 block mt-1">
-            Media outlets & platforms
-          </span>
-        </div>
-
-        <div class="bg-brandBg p-5">
-          <strong class="block font-serif text-3xl text-navy">7+</strong>
-          <span class="text-xs text-slate-500 block mt-1">
-            Brands supported
-          </span>
-        </div>
-
-        <div class="bg-brandBg p-5">
-          <strong class="block font-serif text-3xl text-navy">18 mo.</strong>
-          <span class="text-xs text-slate-500 block mt-1">
-            Agency experience
-          </span>
-        </div>
-
-      </div>
-
-
-      <!-- ROLE / CONTEXT -->
-      <div class="grid md:grid-cols-3 gap-4 p-5 bg-brandBg rounded-xl mb-8 text-xs">
-
+    <section>
+      <div class="wrap grid2">
         <div>
-          <small class="text-slate-400 block uppercase tracking-wide mb-1">
-            Role
-          </small>
-          <strong class="text-navy">
-            SEO Specialist (PR & Content)
-          </strong>
+          <div class="eyebrow">01 · The assignment</div>
+          <h2>From visibility goals to a practical PR plan.</h2>
         </div>
-
         <div>
-          <small class="text-slate-400 block uppercase tracking-wide mb-1">
-            Period
-          </small>
-          <strong class="text-navy">
-            01/2024 – 07/2025
-          </strong>
+          <p>
+            The work sat at the intersection of PR, content and SEO. The objective was not simply
+            to publish more articles, but to find suitable editorial environments, develop useful
+            content and coordinate publication against client requirements.
+          </p>
+          <div class="role-grid">
+            <div class="role"><b>Client brief</b><span class="small">Translate communication objectives into article and placement requirements.</span></div>
+            <div class="role"><b>Media fit</b><span class="small">Research platforms by audience, topic relevance and placement context.</span></div>
+            <div class="role"><b>Content</b><span class="small">Write or coordinate product, research and brand-led content.</span></div>
+            <div class="role"><b>Execution</b><span class="small">Manage deadlines, revisions, publication and client communication.</span></div>
+          </div>
         </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="wrap">
+        <div class="eyebrow">02 · My workflow</div>
+        <h2>Owned the process, not just the copy.</h2>
+        <p style="max-width:700px">
+          I acted as the day-to-day contact for assigned projects, keeping client requirements,
+          deliverables, costs and publication schedules aligned.
+        </p>
+        <div class="process">
+          <div class="step"><span class="n">01</span><b>Brief</b><span class="small">Objective, audience, key message</span></div>
+          <div class="step"><span class="n">02</span><b>Media mapping</b><span class="small">Research & shortlist suitable outlets</span></div>
+          <div class="step"><span class="n">03</span><b>Content</b><span class="small">Brief, write, edit & align messaging</span></div>
+          <div class="step"><span class="n">04</span><b>Placement</b><span class="small">Submission, revisions & publication</span></div>
+          <div class="step"><span class="n">05</span><b>Reporting</b><span class="small">Press clippings & performance tracking</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="eyebrow">03 · Selected work & evidence</div>
+        <h2>What the work produced.</h2>
+        <p style="max-width:760px">
+          Instead of only describing my responsibilities, this section shows the working evidence behind the
+          placements: client briefs, content outputs, live media coverage, tracking and reporting.
+        </p>
+
+        <article class="project">
+          <div class="project-head">
+            <div><div class="tag">Case A</div><div class="brand">Vĩnh Tường</div></div>
+            <div class="small">Selected PR / content execution</div>
+          </div>
+
+          <div class="proof-grid" style="grid-template-columns:repeat(4,1fr);margin-top:0">
+            <div class="proof-item" style="background:#faf7f0;color:var(--ink);border:1px solid var(--line)">
+              <strong>Brief</strong>Client request & communication objective
+            </div>
+            <div class="proof-item" style="background:#faf7f0;color:var(--ink);border:1px solid var(--line)">
+              <strong>Content</strong>Article / copy developed for publication
+            </div>
+            <div class="proof-item" style="background:#faf7f0;color:var(--ink);border:1px solid var(--line)">
+              <strong>Live</strong>Published media coverage
+            </div>
+            <div class="proof-item" style="background:#faf7f0;color:var(--ink);border:1px solid var(--line)">
+              <strong>Report</strong>Coverage recorded for client reporting
+            </div>
+          </div>
+
+          <div class="evidence" style="margin-top:22px">
+            <div class="evidence-grid">
+              <figure>
+                <div class="mock" style="background:#eeeae2">
+                  <div style="width:88%;background:#fff;border:1px solid #d7d1c7;text-align:left;padding:15px">
+                    <div style="font-size:9px;color:#8b6f47;font-weight:700;letter-spacing:.08em">INBOX · CLIENT BRIEF</div>
+                    <div style="font-size:12px;font-weight:700;margin:9px 0 5px">Vĩnh Tường — PR Content Request</div>
+                    <div style="font-size:8px;color:#777;line-height:1.6">
+                      Objective: increase brand visibility<br>
+                      Topic: [project/topic]<br>
+                      Key message: [brand message]<br>
+                      Required placement: relevant media<br>
+                      Deadline: [date]
+                    </div>
+                  </div>
+                </div>
+                <figcaption><b>01 · Client brief / email</b><br>Replace with an actual brief screenshot. Blur names, emails and confidential details.</figcaption>
+              </figure>
+
+              <figure>
+                <div class="mock" style="background:#e7e1d7">
+                  <div style="width:84%;background:white;border:1px solid #d5cec2;box-shadow:0 7px 18px #0001">
+                    <div style="height:20px;background:#f4f1eb;border-bottom:1px solid #ddd6cc"></div>
+                    <div style="font-family:Georgia,serif;font-size:15px;text-align:left;padding:13px 14px 5px">
+                      [Vĩnh Tường] Editorial headline
+                    </div>
+                    <div style="height:5px;background:#ddd7ce;margin:4px 14px"></div>
+                    <div style="font-size:7px;color:#999;text-align:left;padding:5px 14px 13px;line-height:1.7">
+                      Published article preview · brand mention · contextual link
+                    </div>
+                  </div>
+                </div>
+                <figcaption><b>02 · Live publication</b><br>Show the real headline, publication and publication date whenever possible.</figcaption>
+              </figure>
+
+              <figure>
+                <div class="mock" style="background:#e9e5dc">
+                  <div style="width:88%;background:#fff;border:1px solid #d5cec3;padding:12px;text-align:left">
+                    <div style="font-size:9px;font-weight:700">MEDIA TRACKER</div>
+                    <div style="display:grid;grid-template-columns:1.2fr .8fr .6fr;margin-top:10px;font-size:7px;border-top:1px solid #ddd">
+                      <span style="padding:7px 3px;border-bottom:1px solid #ddd">Outlet</span><span style="padding:7px 3px;border-bottom:1px solid #ddd">Status</span><span style="padding:7px 3px;border-bottom:1px solid #ddd">Date</span>
+                      <span style="padding:7px 3px;border-bottom:1px solid #ddd">Media A</span><span style="padding:7px 3px;border-bottom:1px solid #ddd">LIVE</span><span style="padding:7px 3px;border-bottom:1px solid #ddd">xx/xx</span>
+                      <span style="padding:7px 3px;border-bottom:1px solid #ddd">Media B</span><span style="padding:7px 3px;border-bottom:1px solid #ddd">LIVE</span><span style="padding:7px 3px;border-bottom:1px solid #ddd">xx/xx</span>
+                      <span style="padding:7px 3px">Media C</span><span style="padding:7px 3px">PENDING</span><span style="padding:7px 3px">—</span>
+                    </div>
+                  </div>
+                </div>
+                <figcaption><b>03 · Placement tracker</b><br>Evidence of volume, status, deadlines and publication control.</figcaption>
+              </figure>
+
+              <figure>
+                <div class="mock" style="background:#e6e0d6">
+                  <div style="width:88%;background:white;border:1px solid #d5cec3;padding:14px;text-align:left">
+                    <div style="font-size:9px;font-weight:700">CLIENT REPORT · PR COVERAGE</div>
+                    <div style="display:flex;gap:7px;margin-top:13px">
+                      <div style="flex:1;background:#f1ede5;padding:9px"><b style="font-size:16px">XX</b><br><span style="font-size:7px">Published</span></div>
+                      <div style="flex:1;background:#f1ede5;padding:9px"><b style="font-size:16px">XX</b><br><span style="font-size:7px">Outlets</span></div>
+                    </div>
+                    <div style="height:7px;background:#ded7cc;margin-top:12px;width:75%"></div>
+                    <div style="height:7px;background:#ded7cc;margin-top:6px;width:55%"></div>
+                  </div>
+                </div>
+                <figcaption><b>04 · Reporting snapshot</b><br>Use a real report page with sensitive commercial data redacted.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="split" style="margin-top:30px">
+            <div>
+              <h3>Output</h3>
+              <p>Published PR / content coverage across relevant digital media, supported by coordinated content and publication management.</p>
+            </div>
+            <div>
+              <h3>Evidence to show</h3>
+              <p>Original brief → final article → live URL screenshot → tracker/report entry. This creates a visible chain from request to delivered result.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div><div class="tag">Case B</div><div class="brand">CeraVe</div></div>
+            <div class="small">Selected PR / content execution</div>
+          </div>
+
+          <div class="evidence" style="margin-top:0">
+            <div class="evidence-grid">
+              <figure>
+                <div class="mock" style="background:#ece8e1">
+                  <div style="width:88%;background:#fff;border:1px solid #d6d0c6;text-align:left;padding:15px">
+                    <div style="font-size:9px;color:#8b6f47;font-weight:700">EMAIL / CONTENT BRIEF</div>
+                    <div style="font-size:12px;font-weight:700;margin:9px 0 5px">CeraVe — Article Assignment</div>
+                    <div style="font-size:8px;color:#777;line-height:1.6">
+                      Angle: skincare education / product relevance<br>
+                      Audience: target consumers<br>
+                      Key messages: [approved points]<br>
+                      Deliverable: editorial article<br>
+                      Due: [date]
+                    </div>
+                  </div>
+                </div>
+                <figcaption><b>01 · Brief received</b><br>Show the real client/PM email or brief, with private information redacted.</figcaption>
+              </figure>
+
+              <figure>
+                <div class="mock" style="background:#e9e4da">
+                  <div style="width:86%;background:#fff;border:1px solid #d5cec3;text-align:left;padding:14px">
+                    <div style="font-size:9px;color:#777">DRAFT / CONTENT REVIEW</div>
+                    <div style="font-family:Georgia,serif;font-size:15px;margin:8px 0">Educational headline / product-led angle</div>
+                    <div style="font-size:7px;color:#999;line-height:1.7">Key message ✓ &nbsp; Brand accuracy ✓<br>Structure ✓ &nbsp; Link / CTA ✓</div>
+                  </div>
+                </div>
+                <figcaption><b>02 · Content development</b><br>Use a cropped brief/draft showing how the requested message became publishable content.</figcaption>
+              </figure>
+
+              <figure>
+                <div class="mock" style="background:#e7e1d7">
+                  <div style="width:84%;background:white;border:1px solid #d5cec3;box-shadow:0 7px 18px #0001">
+                    <div style="height:20px;background:#f4f1eb;border-bottom:1px solid #ddd6cc"></div>
+                    <div style="font-family:Georgia,serif;font-size:15px;text-align:left;padding:13px 14px 5px">[CeraVe] Published article</div>
+                    <div style="font-size:7px;color:#999;text-align:left;padding:5px 14px 13px;line-height:1.7">Headline · outlet · brand integration · live publication</div>
+                  </div>
+                </div>
+                <figcaption><b>03 · Published result</b><br>This should be the strongest visual: a real live article screenshot.</figcaption>
+              </figure>
+
+              <figure>
+                <div class="mock" style="background:#e6e0d6">
+                  <div style="width:88%;background:white;border:1px solid #d5cec3;padding:14px;text-align:left">
+                    <div style="font-size:9px;font-weight:700">PRESS CLIPPING</div>
+                    <div style="font-size:8px;margin-top:9px;line-height:1.7">
+                      Publication: [media]<br>
+                      Topic: [topic]<br>
+                      Date: [date]<br>
+                      Status: Published
+                    </div>
+                    <div style="height:6px;background:#ddd6cb;margin-top:10px;width:70%"></div>
+                  </div>
+                </div>
+                <figcaption><b>04 · Clipping / report</b><br>Close the loop by showing how the result was recorded for the client.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="split" style="margin-top:30px">
+            <div>
+              <h3>Output</h3>
+              <p>Brand-aligned educational and product content published through digital media channels, with final coverage tracked for reporting.</p>
+            </div>
+            <div>
+              <h3>Evidence to show</h3>
+              <p>Brief → draft → published article → press clipping. The sequence makes your contribution tangible without overstating ownership.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="eyebrow">04 · Results snapshot</div>
+        <h2>Make the outcome visible.</h2>
+        <div class="numbers" style="margin-top:28px">
+          <div class="num"><strong>150+</strong><span>PR & content placements delivered across the broader TOS client portfolio</span></div>
+          <div class="num"><strong>50+</strong><span>media outlets and digital platforms used across client projects</span></div>
+          <div class="num"><strong>7+</strong><span>brands supported through PR and content execution</span></div>
+        </div>
+        <div class="project" style="margin-top:24px">
+          <div class="split">
+            <div>
+              <div class="tag">How to present the proof</div>
+              <h3 style="margin-top:8px">Show real evidence before adding more claims.</h3>
+              <p>For each selected brand, prioritize a real client brief, one or two live publication screenshots, and the corresponding tracker/report entry.</p>
+            </div>
+            <div>
+              <div class="tag">Recommended evidence set</div>
+              <ul style="margin:10px 0 0;padding-left:18px;color:#514d47">
+                <li>1 × client brief / assignment email</li>
+                <li>1 × content draft or working document</li>
+                <li>2–4 × live media publication screenshots</li>
+                <li>1 × media tracker / placement sheet</li>
+                <li>1 × client report / press clipping</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid2">
         <div>
-          <small class="text-slate-400 block uppercase tracking-wide mb-1">
-            Selected Clients
-          </small>
-          <strong class="text-navy">
-            CeraVe · Vĩnh Tường
-          </strong>
+          <div class="eyebrow">05 · Media selection</div>
+          <h2>Placement was treated as a fit problem.</h2>
         </div>
-
-      </div>
-
-
-      <!-- ROLE FIT -->
-      <div class="mb-9">
-
-        <div class="flex items-center gap-3 mb-4">
-          <span class="text-xs font-bold text-gold uppercase tracking-widest">
-            01
-          </span>
-          <h3 class="font-bold text-navy text-lg">
-            What I handled
-          </h3>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-3">
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <span class="text-[10px] uppercase tracking-wider text-gold font-bold">
-              PR Content
-            </span>
-            <p class="text-sm text-bodyDark mt-2 leading-6">
-              Developed product, research and brand content for websites
-              and digital channels to support brand positioning and online presence.
-            </p>
-          </div>
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <span class="text-[10px] uppercase tracking-wider text-gold font-bold">
-              Media Relations
-            </span>
-            <p class="text-sm text-bodyDark mt-2 leading-6">
-              Secured and coordinated PR and content placements across
-              50+ media outlets and digital platforms.
-            </p>
-          </div>
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <span class="text-[10px] uppercase tracking-wider text-gold font-bold">
-              Client Coordination
-            </span>
-            <p class="text-sm text-bodyDark mt-2 leading-6">
-              Acted as the main contact for client projects, managing
-              timelines, deliverables, costs and daily communication.
-            </p>
-          </div>
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <span class="text-[10px] uppercase tracking-wider text-gold font-bold">
-              Coverage & Reporting
-            </span>
-            <p class="text-sm text-bodyDark mt-2 leading-6">
-              Compiled press clippings and supported media performance
-              tracking for client-facing reports.
-            </p>
-          </div>
-
+        <div>
+          <p>I evaluated potential placements against practical criteria rather than treating every outlet as interchangeable.</p>
+          <table class="matrix">
+            <tr><th>Criteria</th><th>What I looked for</th></tr>
+            <tr><td>Audience</td><td>Alignment with the brand's target audience and category.</td></tr>
+            <tr><td>Editorial fit</td><td>Whether the topic and brand could appear naturally in context.</td></tr>
+            <tr><td>Credibility</td><td>Relevant, established media or digital platforms.</td></tr>
+            <tr><td>SEO value</td><td>Contextually relevant placement and backlink opportunity where applicable.</td></tr>
+            <tr><td>Cost & timing</td><td>Placement feasibility within project budget and deadline.</td></tr>
+          </table>
         </div>
       </div>
+    </section>
 
-
-      <!-- WORKFLOW -->
-      <div class="mb-9">
-
-        <div class="flex items-center gap-3 mb-4">
-          <span class="text-xs font-bold text-gold uppercase tracking-widest">
-            02
-          </span>
-          <h3 class="font-bold text-navy text-lg">
-            From brief to media coverage
-          </h3>
+    <section>
+      <div class="wrap grid2">
+        <div>
+          <div class="eyebrow">06 · Project management</div>
+          <h2>The part behind every published article.</h2>
+          <p>
+            Multiple placements meant multiple deadlines, stakeholders and revisions. My responsibility
+            was to keep the workflow moving while protecting the client's requirements.
+          </p>
         </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-px bg-slate-200 rounded-xl overflow-hidden">
-
-          <div class="bg-white p-4">
-            <span class="text-[10px] text-gold font-bold">01</span>
-            <strong class="block text-sm text-navy mt-2">Brief</strong>
-            <p class="text-xs text-slate-500 mt-1">
-              Clarify objectives, requirements and deliverables.
-            </p>
-          </div>
-
-          <div class="bg-white p-4">
-            <span class="text-[10px] text-gold font-bold">02</span>
-            <strong class="block text-sm text-navy mt-2">Direction</strong>
-            <p class="text-xs text-slate-500 mt-1">
-              Define content direction and suitable media context.
-            </p>
-          </div>
-
-          <div class="bg-white p-4">
-            <span class="text-[10px] text-gold font-bold">03</span>
-            <strong class="block text-sm text-navy mt-2">Content</strong>
-            <p class="text-xs text-slate-500 mt-1">
-              Write, edit and align content with the brief.
-            </p>
-          </div>
-
-          <div class="bg-white p-4">
-            <span class="text-[10px] text-gold font-bold">04</span>
-            <strong class="block text-sm text-navy mt-2">Placement</strong>
-            <p class="text-xs text-slate-500 mt-1">
-              Coordinate submission, revisions and publication.
-            </p>
-          </div>
-
-          <div class="bg-white p-4">
-            <span class="text-[10px] text-gold font-bold">05</span>
-            <strong class="block text-sm text-navy mt-2">Reporting</strong>
-            <p class="text-xs text-slate-500 mt-1">
-              Compile press clippings and media performance.
-            </p>
-          </div>
-
+        <div class="timeline">
+          <div class="tl"><b>Client requirement</b><span class="small">Clarified objectives, topic, key messages and deliverables.</span></div>
+          <div class="tl"><b>Media coordination</b><span class="small">Aligned submission requirements, publication timing and revisions.</span></div>
+          <div class="tl"><b>Content review</b><span class="small">Checked brand messaging, accuracy, links and final presentation.</span></div>
+          <div class="tl"><b>Publication</b><span class="small">Confirmed live coverage and recorded the final placement.</span></div>
+          <div class="tl"><b>Reporting</b><span class="small">Compiled press clippings and supported media performance tracking.</span></div>
         </div>
       </div>
+    </section>
 
-
-      <!-- CASE 01 -->
-      <div class="border border-slate-200 rounded-2xl overflow-hidden mb-6">
-
-        <div class="p-6 bg-brandBg border-b border-slate-200">
-
-          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
-
-            <div>
-              <span class="text-[10px] font-bold text-gold uppercase tracking-widest">
-                Case 01 · Construction
-              </span>
-
-              <h3 class="font-serif text-2xl font-bold text-navy mt-1">
-                Vĩnh Tường
-              </h3>
-
-              <p class="text-xs text-slate-500 mt-1">
-                PR Content · Media Placement · Client Coordination
-              </p>
-            </div>
-
-            <div class="text-left md:text-right">
-              <span class="text-xs text-slate-400 block">
-                Selected project result
-              </span>
-              <strong class="text-lg text-navy">
-                1M+ organic clicks / year
-              </strong>
-            </div>
-
+    <section>
+      <div class="wrap">
+        <div class="eyebrow">07 · Proof of execution</div>
+        <h2>Show the work. Protect the client.</h2>
+        <p style="max-width:760px">
+          For a real portfolio, replace the demo panels above with your own evidence. Keep client-sensitive
+          information blurred, while leaving enough visible detail for a recruiter to verify the nature of the work.
+        </p>
+        <div class="proof">
+          <div class="proof-grid">
+            <div class="proof-item"><strong>01</strong>Published article screenshot</div>
+            <div class="proof-item"><strong>02</strong>Media shortlist / tracker</div>
+            <div class="proof-item"><strong>03</strong>Content brief or draft</div>
+            <div class="proof-item"><strong>04</strong>Client report / press clipping</div>
           </div>
-
-        </div>
-
-        <div class="p-6">
-
-          <div class="grid md:grid-cols-2 gap-7">
-
-            <div>
-              <h4 class="font-bold text-navy text-sm mb-2">
-                Project contribution
-              </h4>
-
-              <p class="text-sm text-bodyDark leading-6">
-                Supported content and PR execution for Vĩnh Tường,
-                coordinating brand requirements, content production,
-                publication workflow and project deliverables.
-              </p>
-
-              <div class="grid grid-cols-3 gap-2 mt-5">
-
-                <div class="bg-brandBg rounded-lg p-3">
-                  <strong class="font-serif text-xl text-navy block">
-                    1M+
-                  </strong>
-                  <span class="text-[10px] text-slate-500">
-                    Clicks / year
-                  </span>
-                </div>
-
-                <div class="bg-brandBg rounded-lg p-3">
-                  <strong class="font-serif text-xl text-navy block">
-                    20M
-                  </strong>
-                  <span class="text-[10px] text-slate-500">
-                    Impressions
-                  </span>
-                </div>
-
-                <div class="bg-brandBg rounded-lg p-3">
-                  <strong class="font-serif text-xl text-navy block">
-                    84K+
-                  </strong>
-                  <span class="text-[10px] text-slate-500">
-                    Conversions
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-navy text-sm mb-3">
-                Evidence
-              </h4>
-
-              <div class="grid grid-cols-2 gap-2">
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Client Brief<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Content Draft<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Published Coverage<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Media Tracker<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
+          <p class="note">Recommended: blur contact names, private pricing, internal URLs, client email addresses and confidential performance data.</p>
         </div>
       </div>
+    </section>
 
-
-      <!-- CASE 02 -->
-      <div class="border border-slate-200 rounded-2xl overflow-hidden mb-9">
-
-        <div class="p-6 bg-brandBg border-b border-slate-200">
-
-          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
-
-            <div>
-              <span class="text-[10px] font-bold text-gold uppercase tracking-widest">
-                Case 02 · Beauty / FMCG
-              </span>
-
-              <h3 class="font-serif text-2xl font-bold text-navy mt-1">
-                CeraVe
-              </h3>
-
-              <p class="text-xs text-slate-500 mt-1">
-                Content Review · Brand Consistency · Digital Execution
-              </p>
-            </div>
-
-            <div class="text-left md:text-right">
-              <span class="text-xs text-slate-400 block">
-                Selected project result
-              </span>
-              <strong class="text-lg text-navy">
-                97.36% audit score
-              </strong>
-            </div>
-
-          </div>
-
+    <section>
+      <div class="wrap grid2">
+        <div>
+          <div class="eyebrow">08 · What this experience built</div>
+          <h2>PR became a project-management discipline.</h2>
         </div>
-
-        <div class="p-6">
-
-          <div class="grid md:grid-cols-2 gap-7">
-
-            <div>
-              <h4 class="font-bold text-navy text-sm mb-2">
-                Project contribution
-              </h4>
-
-              <p class="text-sm text-bodyDark leading-6">
-                Supported CeraVe-related content work with a focus on
-                content quality, brand consistency and digital execution,
-                alongside website audit and performance-oriented recommendations.
-              </p>
-
-              <div class="grid grid-cols-3 gap-2 mt-5">
-
-                <div class="bg-brandBg rounded-lg p-3">
-                  <strong class="font-serif text-xl text-navy block">
-                    97.36%
-                  </strong>
-                  <span class="text-[10px] text-slate-500">
-                    Overall score
-                  </span>
-                </div>
-
-                <div class="bg-brandBg rounded-lg p-3">
-                  <strong class="font-serif text-xl text-navy block">
-                    95.81%
-                  </strong>
-                  <span class="text-[10px] text-slate-500">
-                    Technical
-                  </span>
-                </div>
-
-                <div class="bg-brandBg rounded-lg p-3">
-                  <strong class="font-serif text-xl text-navy block">
-                    97.96%
-                  </strong>
-                  <span class="text-[10px] text-slate-500">
-                    Elements
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-            <div>
-              <h4 class="font-bold text-navy text-sm mb-3">
-                Evidence
-              </h4>
-
-              <div class="grid grid-cols-2 gap-2">
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Content Angle<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Content Review<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Published Article<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-                <div class="bg-slate-100 rounded-lg p-5 min-h-[105px] flex items-center justify-center text-center">
-                  <span class="text-[10px] text-slate-400 uppercase tracking-wide">
-                    Clipping Report<br>
-                    <em>Insert screenshot</em>
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
+        <div>
+          <div class="quote">“The deliverable was not the article. The deliverable was getting the right message into the right environment — on time.”</div>
+          <p>
+            Working across client briefs, media platforms and content production strengthened my ability
+            to coordinate stakeholders, manage deadlines and translate communication objectives into executable work.
+          </p>
+          <p>
+            That combination of <b>PR thinking + content + project coordination</b> is the foundation I bring to
+            larger corporate communications and integrated campaigns.
+          </p>
         </div>
       </div>
+    </section>
 
-
-      <!-- MEDIA APPROACH -->
-      <div class="mb-9">
-
-        <div class="flex items-center gap-3 mb-4">
-          <span class="text-xs font-bold text-gold uppercase tracking-widest">
-            03
-          </span>
-          <h3 class="font-bold text-navy text-lg">
-            Media Placement Approach
-          </h3>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-3">
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <strong class="text-sm text-navy block">
-              Audience Fit
-            </strong>
-            <p class="text-xs text-slate-500 mt-1 leading-5">
-              Match the outlet with the relevant target audience and topic.
-            </p>
-          </div>
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <strong class="text-sm text-navy block">
-              Editorial Context
-            </strong>
-            <p class="text-xs text-slate-500 mt-1 leading-5">
-              Prioritize a natural fit between article angle and publication context.
-            </p>
-          </div>
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <strong class="text-sm text-navy block">
-              Content Quality
-            </strong>
-            <p class="text-xs text-slate-500 mt-1 leading-5">
-              Review accuracy, clarity and brand alignment before publication.
-            </p>
-          </div>
-
-          <div class="border border-slate-200 rounded-xl p-4">
-            <strong class="text-sm text-navy block">
-              Publication Control
-            </strong>
-            <p class="text-xs text-slate-500 mt-1 leading-5">
-              Track submission, revisions, timelines and final publication.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-
-      <!-- REPORTING -->
-      <div class="bg-brandBg rounded-2xl p-6">
-
-        <div class="flex items-center gap-3 mb-4">
-          <span class="text-xs font-bold text-gold uppercase tracking-widest">
-            04
-          </span>
-          <h3 class="font-bold text-navy text-lg">
-            Coverage & Reporting
-          </h3>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-5">
-
+    <footer class="footer">
+      <div class="wrap">
+        <div class="cta">
           <div>
-            <strong class="text-sm text-navy block mb-1">
-              Press Clipping
-            </strong>
-            <p class="text-xs text-slate-500 leading-5">
-              Collected published coverage and maintained evidence for client reporting.
-            </p>
+            <div class="eyebrow">TOS Agency · 2024–2025</div>
+            <h2>Selected PR & Content work for client portfolios including Vĩnh Tường and CeraVe.</h2>
           </div>
-
-          <div>
-            <strong class="text-sm text-navy block mb-1">
-              Media Tracking
-            </strong>
-            <p class="text-xs text-slate-500 leading-5">
-              Supported tracking of media coverage and publication status.
-            </p>
-          </div>
-
-          <div>
-            <strong class="text-sm text-navy block mb-1">
-              Client Reporting
-            </strong>
-            <p class="text-xs text-slate-500 leading-5">
-              Consolidated coverage and performance information into client reports.
-            </p>
-          </div>
-
+          <div class="small">Le Tran Bao Tram<br>PR & Communications</div>
         </div>
-
       </div>
-
-    </div>`
-},
+    </footer>
+    </body>
+    </html>
+  `
+}
     baoviet: {
       category: "Event Communication · Operations",
       title: "BẢO VIỆT — Event Communication",
