@@ -838,103 +838,935 @@ async function handleFormSubmit(event) {
   ========================= */
   const modalData = {
        herbal: {
-      category: "PR · Brand Communication · Digital",
-      title: "HERBAL SPA — PR & Brand Communication",
-      role: "Marketing Lead",
-      period: "08/2025 – Present",
-      lead: "Leading PR and brand communication for Herbal Spa & Wellness Center, coordinating 50+ media placements and shaping campaign messaging that supported a 25% increase in bookings.",
-      html: `
-        <div class="case-study p-8">
-          <div class="case-study-header mb-6">
-            <span class="text-xs font-bold text-gold uppercase tracking-widest">Herbal Spa & Wellness Center</span>
-            <h2 class="font-serif text-3xl font-bold text-navy mt-1">PR & Brand Communication</h2>
-            <p class="text-sm text-bodyDark mt-2">From selecting media angles and coordinating 50+ PR placements to reviewing published content, monitoring coverage and supporting reputation management.</p>
+  category: "PR · Brand Communication · Digital",
+  title: "HERBAL SPA — PR & Brand Communication",
+  role: "Marketing Lead",
+  period: "08/2025 – Present",
+
+  lead: "Leading PR and brand communication for Herbal Spa & Wellness Center, coordinating 50+ media placements, developing campaign messaging and supporting communication across media, digital communities, partners and customer touchpoints.",
+
+  html: `
+    <div class="case-study bg-white">
+
+      <!-- =====================================================
+           HERO
+      ====================================================== -->
+      <section class="relative overflow-hidden rounded-2xl bg-navy text-white p-8 md:p-10 mb-8">
+
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <div class="absolute -right-20 -top-20 w-72 h-72 rounded-full border border-white"></div>
+          <div class="absolute -right-10 top-10 w-48 h-48 rounded-full border border-white"></div>
+        </div>
+
+        <div class="relative z-10 max-w-3xl">
+          <span class="text-[11px] font-bold uppercase tracking-[0.22em] text-gold">
+            Herbal Spa & Wellness Center
+          </span>
+
+          <h2 class="font-serif text-3xl md:text-4xl font-bold mt-3 leading-tight">
+            PR & Brand Communication
+          </h2>
+
+          <p class="text-sm md:text-base text-white/75 leading-relaxed mt-4 max-w-2xl">
+            Building consistent brand communication across PR, digital communities,
+            campaigns, partners and customer touchpoints — from media selection and
+            briefing to publication review, monitoring and reputation management.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs">
+              PR Planning
+            </span>
+            <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs">
+              Media Relations
+            </span>
+            <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs">
+              Brand Communication
+            </span>
+            <span class="px-3 py-1.5 rounded-full bg-white/10 border border-white/10 text-xs">
+              Campaign Communication
+            </span>
           </div>
-          <div class="grid grid-cols-3 gap-4 p-4 bg-brandBg rounded-xl mb-6 text-xs">
-            <div><small class="text-slate-400 block uppercase">Role</small><strong>Marketing Lead</strong></div>
-            <div><small class="text-slate-400 block uppercase">Period</small><strong>08/2025 – Present</strong></div>
-            <div><small class="text-slate-400 block uppercase">Focus</small><strong>PR · Brand Communication · Digital</strong></div>
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           PROJECT SNAPSHOT
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+
+          <div class="rounded-xl border border-slate-100 bg-brandBg p-4">
+            <span class="block text-[10px] uppercase tracking-wider text-slate-400">
+              Role
+            </span>
+            <strong class="block text-sm text-navy mt-1">
+              Marketing Lead
+            </strong>
           </div>
-          <div class="grid grid-cols-3 gap-4 text-center mb-6">
-            <div>
-              <p class="font-serif text-2xl font-bold text-navy">50+</p>
-              <p class="text-xs text-bodyDark mt-1">PR placements coordinated</p>
-            </div>
-            <div>
-              <p class="font-serif text-2xl font-bold text-navy">25%</p>
-              <p class="text-xs text-bodyDark mt-1">Increase in bookings supported by campaigns</p>
-            </div>
-            <div>
-              <p class="font-serif text-2xl font-bold text-navy">360°</p>
-              <p class="text-xs text-bodyDark mt-1">Communication support across media, communities & partners</p>
+
+          <div class="rounded-xl border border-slate-100 bg-brandBg p-4">
+            <span class="block text-[10px] uppercase tracking-wider text-slate-400">
+              Period
+            </span>
+            <strong class="block text-sm text-navy mt-1">
+              08/2025 – Present
+            </strong>
+          </div>
+
+          <div class="rounded-xl border border-slate-100 bg-brandBg p-4">
+            <span class="block text-[10px] uppercase tracking-wider text-slate-400">
+              PR Placements
+            </span>
+            <strong class="block text-2xl font-serif text-navy mt-0.5">
+              50+
+            </strong>
+          </div>
+
+          <div class="rounded-xl border border-slate-100 bg-brandBg p-4">
+            <span class="block text-[10px] uppercase tracking-wider text-slate-400">
+              Booking Impact
+            </span>
+            <strong class="block text-2xl font-serif text-navy mt-0.5">
+              +25%
+            </strong>
+          </div>
+
+        </div>
+
+        <p class="text-[11px] text-slate-400 mt-3">
+          * Booking impact reflects campaigns supported through communication,
+          content direction and promotional activities.
+        </p>
+
+      </section>
+
+
+      <!-- =====================================================
+           01 — CONTEXT
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-[10px] font-bold text-gold tracking-widest">01</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            Communication Challenge
+          </h3>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <div>
+            <p class="text-sm leading-7 text-bodyDark">
+              Herbal Spa operates in a competitive wellness and hospitality
+              environment where communication needs to remain consistent across
+              multiple channels and audiences.
+            </p>
+
+            <p class="text-sm leading-7 text-bodyDark mt-3">
+              The challenge was not simply generating media coverage, but ensuring
+              that every communication opportunity contributed to a coherent brand
+              story — from PR articles and digital communities to campaigns,
+              partners and customer conversations.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-brandBg p-5">
+            <span class="text-[10px] uppercase tracking-wider text-slate-400">
+              My communication scope
+            </span>
+
+            <div class="grid grid-cols-2 gap-3 mt-4 text-xs">
+
+              <div class="flex gap-2">
+                <span class="text-gold">01</span>
+                <span>Media relations</span>
+              </div>
+
+              <div class="flex gap-2">
+                <span class="text-gold">02</span>
+                <span>Content & messaging</span>
+              </div>
+
+              <div class="flex gap-2">
+                <span class="text-gold">03</span>
+                <span>Campaign communication</span>
+              </div>
+
+              <div class="flex gap-2">
+                <span class="text-gold">04</span>
+                <span>Digital communities</span>
+              </div>
+
+              <div class="flex gap-2">
+                <span class="text-gold">05</span>
+                <span>Partner communication</span>
+              </div>
+
+              <div class="flex gap-2">
+                <span class="text-gold">06</span>
+                <span>Reputation management</span>
+              </div>
+
             </div>
           </div>
-          <div class="space-y-4 text-sm text-bodyDark">
-            <h3 class="font-bold text-navy text-base">Challenge</h3>
-            <p>Herbal Spa operates in a highly competitive wellness market where visibility alone is not enough. The brand needed consistent communication across media, digital communities, partners and customer touchpoints.</p>
-            <p>My role covered the communication layer behind the brand: identifying suitable media opportunities, developing angles and key messages, coordinating publication, reviewing content before it went live and tracking the outcome afterwards.</p>
- 
-            <h3 class="font-bold text-navy text-base pt-2">PR Process</h3>
-            <p>PR was treated as a process rather than simply "getting an article published" — each placement started with a communication objective and ended with publication review and performance tracking.</p>
-            <ul class="list-disc pl-5 space-y-1">
-              <li><strong>Angle</strong> — identify the campaign objective, audience and a relevant content angle.</li>
-              <li><strong>Media</strong> — propose suitable outlets and formats based on topic, audience and budget.</li>
-              <li><strong>Content</strong> — develop key messages, provide briefs and review content before publication.</li>
-              <li><strong>Placement</strong> — coordinate timelines, costs, materials and communication with media partners.</li>
-              <li><strong>Report</strong> — track published coverage and summarize results for post-PR evaluation.</li>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           02 — PR WORKFLOW
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-[10px] font-bold text-gold tracking-widest">02</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            From Brief to Published Coverage
+          </h3>
+        </div>
+
+        <p class="text-sm text-bodyDark leading-6 mb-6">
+          I treated PR as an end-to-end communication process rather than simply
+          securing an article placement.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
+
+          <div class="relative rounded-xl border border-slate-100 p-4">
+            <span class="text-[10px] font-bold text-gold">01</span>
+            <h4 class="font-bold text-sm text-navy mt-2">Angle</h4>
+            <p class="text-xs text-bodyDark mt-2 leading-5">
+              Define campaign objective, audience and communication angle.
+            </p>
+          </div>
+
+          <div class="relative rounded-xl border border-slate-100 p-4">
+            <span class="text-[10px] font-bold text-gold">02</span>
+            <h4 class="font-bold text-sm text-navy mt-2">Media</h4>
+            <p class="text-xs text-bodyDark mt-2 leading-5">
+              Research and propose relevant media outlets and formats.
+            </p>
+          </div>
+
+          <div class="relative rounded-xl border border-slate-100 p-4">
+            <span class="text-[10px] font-bold text-gold">03</span>
+            <h4 class="font-bold text-sm text-navy mt-2">Booking</h4>
+            <p class="text-xs text-bodyDark mt-2 leading-5">
+              Negotiate costs, confirm placements, timelines and deliverables.
+            </p>
+          </div>
+
+          <div class="relative rounded-xl border border-slate-100 p-4">
+            <span class="text-[10px] font-bold text-gold">04</span>
+            <h4 class="font-bold text-sm text-navy mt-2">Content</h4>
+            <p class="text-xs text-bodyDark mt-2 leading-5">
+              Prepare briefs, key messages and review content before publication.
+            </p>
+          </div>
+
+          <div class="relative rounded-xl border border-slate-100 p-4">
+            <span class="text-[10px] font-bold text-gold">05</span>
+            <h4 class="font-bold text-sm text-navy mt-2">Monitor</h4>
+            <p class="text-xs text-bodyDark mt-2 leading-5">
+              Verify published coverage and consolidate results for reporting.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           03 — MEDIA BOOKING EVIDENCE
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center justify-between gap-4 mb-4">
+          <div>
+            <div class="flex items-center gap-3">
+              <span class="text-[10px] font-bold text-gold tracking-widest">03</span>
+              <h3 class="font-serif text-xl font-bold text-navy">
+                Media Relations — In Practice
+              </h3>
+            </div>
+
+            <p class="text-sm text-bodyDark mt-2">
+              Selected working evidence from media booking and coordination.
+            </p>
+          </div>
+
+          <span class="hidden md:block text-[10px] uppercase tracking-wider text-slate-400">
+            Selected evidence
+          </span>
+        </div>
+
+
+        <!-- BOOKING SCREENSHOTS -->
+        <div class="grid md:grid-cols-2 gap-5">
+
+          <!-- Booking confirmation -->
+          <div class="rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm">
+
+            <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/media-booking-confirmation.jpg"
+                alt="Media booking confirmation"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="p-4">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                  Booking Confirmation
+                </span>
+              </div>
+
+              <h4 class="font-bold text-sm text-navy mt-2">
+                Confirming a successful media placement
+              </h4>
+
+              <p class="text-xs text-bodyDark leading-5 mt-1">
+                Direct communication showing confirmation of a booked media
+                placement and agreed deliverables.
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- Negotiation / booking -->
+          <div class="rounded-2xl overflow-hidden border border-slate-100 bg-white shadow-sm">
+
+            <div class="aspect-[16/10] bg-slate-100 overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/media-booking-chat.jpg"
+                alt="Media booking communication"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="p-4">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-gold"></span>
+                <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                  Media Coordination
+                </span>
+              </div>
+
+              <h4 class="font-bold text-sm text-navy mt-2">
+                From negotiation to confirmed placement
+              </h4>
+
+              <p class="text-xs text-bodyDark leading-5 mt-1">
+                Selected communication showing coordination around pricing,
+                content requirements, timeline and publication.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Evidence note -->
+        <div class="mt-4 rounded-xl bg-brandBg p-4 flex gap-3">
+          <span class="text-gold text-sm">↗</span>
+          <p class="text-xs text-bodyDark leading-5">
+            Personal contact information and commercially sensitive details are
+            redacted. Screenshots are included as selected work evidence.
+          </p>
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           04 — MEDIA ARCHIVE
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-[10px] font-bold text-gold tracking-widest">04</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            Media Coverage Archive
+          </h3>
+        </div>
+
+        <p class="text-sm text-bodyDark leading-6 mb-5">
+          A selected archive of media outlets and published placements coordinated
+          during the project.
+        </p>
+
+
+        <!-- Archive list -->
+        <div class="rounded-2xl border border-slate-100 overflow-hidden">
+
+          <!-- Item -->
+          <div class="flex items-center gap-4 p-4 border-b border-slate-100">
+
+            <div class="w-16 h-12 rounded-lg bg-slate-100 flex items-center justify-center overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/media-01.jpg"
+                alt="Media coverage"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <span class="text-[9px] uppercase tracking-wider text-slate-400">
+                Lifestyle · Travel
+              </span>
+
+              <h4 class="text-sm font-bold text-navy truncate">
+                Media Outlet / Article Title
+              </h4>
+
+              <p class="text-[11px] text-slate-400 mt-0.5">
+                Published · 2026
+              </p>
+            </div>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-semibold text-navy whitespace-nowrap"
+            >
+              View ↗
+            </a>
+
+          </div>
+
+
+          <!-- Item -->
+          <div class="flex items-center gap-4 p-4 border-b border-slate-100">
+
+            <div class="w-16 h-12 rounded-lg bg-slate-100 flex items-center justify-center overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/media-02.jpg"
+                alt="Media coverage"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <span class="text-[9px] uppercase tracking-wider text-slate-400">
+                Travel · Experience
+              </span>
+
+              <h4 class="text-sm font-bold text-navy truncate">
+                Media Outlet / Article Title
+              </h4>
+
+              <p class="text-[11px] text-slate-400 mt-0.5">
+                Published · 2026
+              </p>
+            </div>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-semibold text-navy whitespace-nowrap"
+            >
+              View ↗
+            </a>
+
+          </div>
+
+
+          <!-- Item -->
+          <div class="flex items-center gap-4 p-4">
+
+            <div class="w-16 h-12 rounded-lg bg-slate-100 flex items-center justify-center overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/media-03.jpg"
+                alt="Media coverage"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <span class="text-[9px] uppercase tracking-wider text-slate-400">
+                Wellness · Lifestyle
+              </span>
+
+              <h4 class="text-sm font-bold text-navy truncate">
+                Media Outlet / Article Title
+              </h4>
+
+              <p class="text-[11px] text-slate-400 mt-0.5">
+                Published · 2026
+              </p>
+            </div>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-xs font-semibold text-navy whitespace-nowrap"
+            >
+              View ↗
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Archive summary -->
+        <div class="grid grid-cols-3 gap-3 mt-4">
+
+          <div class="text-center rounded-xl bg-brandBg p-4">
+            <strong class="block font-serif text-xl text-navy">50+</strong>
+            <span class="text-[10px] text-slate-400 uppercase tracking-wide">
+              Placements
+            </span>
+          </div>
+
+          <div class="text-center rounded-xl bg-brandBg p-4">
+            <strong class="block font-serif text-xl text-navy">
+              Multi-channel
+            </strong>
+            <span class="text-[10px] text-slate-400 uppercase tracking-wide">
+              Coverage
+            </span>
+          </div>
+
+          <div class="text-center rounded-xl bg-brandBg p-4">
+            <strong class="block font-serif text-xl text-navy">
+              End-to-end
+            </strong>
+            <span class="text-[10px] text-slate-400 uppercase tracking-wide">
+              Coordination
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           05 — BRAND COMMUNICATION
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-[10px] font-bold text-gold tracking-widest">05</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            Beyond PR: Brand Communication
+          </h3>
+        </div>
+
+        <p class="text-sm text-bodyDark leading-6 mb-6 max-w-2xl">
+          PR was one part of the communication system. I also contributed to how
+          Herbal Spa presented itself across digital touchpoints, campaigns,
+          communities and partner communication.
+        </p>
+
+
+        <div class="grid md:grid-cols-2 gap-5">
+
+          <!-- Website -->
+          <div class="group rounded-2xl overflow-hidden border border-slate-100 bg-white">
+
+            <div class="aspect-[16/9] bg-slate-100 overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/website-branding.jpg"
+                alt="Herbal Spa website brand communication"
+                class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-500"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="p-5">
+              <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                Website & Digital Presence
+              </span>
+
+              <h4 class="font-serif text-lg font-bold text-navy mt-2">
+                Brand consistency across digital touchpoints
+              </h4>
+
+              <p class="text-xs text-bodyDark leading-5 mt-2">
+                Managed website content, visuals and presentation with attention
+                to brand consistency, user experience and communication clarity.
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- Campaign -->
+          <div class="group rounded-2xl overflow-hidden border border-slate-100 bg-white">
+
+            <div class="aspect-[16/9] bg-slate-100 overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/campaign-content.jpg"
+                alt="Herbal Spa campaign communication"
+                class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-500"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="p-5">
+              <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                Campaign Communication
+              </span>
+
+              <h4 class="font-serif text-lg font-bold text-navy mt-2">
+                Turning campaign objectives into messages
+              </h4>
+
+              <p class="text-xs text-bodyDark leading-5 mt-2">
+                Developed key messages, content direction and promotional
+                communication to support marketing campaigns and customer
+                acquisition.
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- Community -->
+          <div class="group rounded-2xl overflow-hidden border border-slate-100 bg-white">
+
+            <div class="aspect-[16/9] bg-slate-100 overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/community.jpg"
+                alt="Herbal Spa digital community communication"
+                class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-500"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="p-5">
+              <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                Digital Communities
+              </span>
+
+              <h4 class="font-serif text-lg font-bold text-navy mt-2">
+                Consistent communication beyond owned channels
+              </h4>
+
+              <p class="text-xs text-bodyDark leading-5 mt-2">
+                Managed brand communication across relevant forums and digital
+                communities while maintaining consistent messaging and tone.
+              </p>
+            </div>
+
+          </div>
+
+
+          <!-- Partner -->
+          <div class="group rounded-2xl overflow-hidden border border-slate-100 bg-white">
+
+            <div class="aspect-[16/9] bg-slate-100 overflow-hidden">
+              <img
+                src="assets/portfolio/herbal/partner-communication.jpg"
+                alt="Herbal Spa partner communication"
+                class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-500"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="p-5">
+              <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                B2B & Partner Communication
+              </span>
+
+              <h4 class="font-serif text-lg font-bold text-navy mt-2">
+                Extending the brand through partners
+              </h4>
+
+              <p class="text-xs text-bodyDark leading-5 mt-2">
+                Supported communication with B2B and OTA partners to ensure
+                information, offers and brand presentation remained aligned.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           06 — MESSAGE DEVELOPMENT
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-[10px] font-bold text-gold tracking-widest">06</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            Key Message Development
+          </h3>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <div>
+            <p class="text-sm text-bodyDark leading-7">
+              Communication was adapted by audience and channel rather than
+              repeating the same message everywhere.
+            </p>
+
+            <ul class="mt-4 space-y-3 text-sm text-bodyDark">
+
+              <li class="flex gap-3">
+                <span class="text-gold font-bold">01</span>
+                <span>
+                  <strong class="text-navy">Campaign objective</strong><br>
+                  Translate business objectives into communication priorities.
+                </span>
+              </li>
+
+              <li class="flex gap-3">
+                <span class="text-gold font-bold">02</span>
+                <span>
+                  <strong class="text-navy">Audience</strong><br>
+                  Adjust messaging based on audience, channel and context.
+                </span>
+              </li>
+
+              <li class="flex gap-3">
+                <span class="text-gold font-bold">03</span>
+                <span>
+                  <strong class="text-navy">Brand consistency</strong><br>
+                  Maintain tone, facts and visual presentation across outputs.
+                </span>
+              </li>
+
             </ul>
- 
-            <h3 class="font-bold text-navy text-base pt-2">Media Relations</h3>
-            <p>Proposed media outlets and coordinated 50+ PR placements end to end — from initial negotiation and briefing through pre-publication review and final monitoring.</p>
- 
-            <h3 class="font-bold text-navy text-base pt-2">Content & Messaging</h3>
-            <p>Beyond media coordination, contributed to campaign messaging and content direction so the same brand story could be carried across PR, digital content and promotional materials.</p>
-            <ul class="list-disc pl-5 space-y-1">
-              <li><strong>Key messages</strong> — translated campaign objectives into concise communication points.</li>
-              <li><strong>Content angles</strong> — adjusted the story depending on audience and communication channel.</li>
-              <li><strong>Content review</strong> — checked tone, facts, brand consistency and presentation before publication.</li>
-              <li><strong>Promotional materials</strong> — supported campaign communication with digital and promotional assets.</li>
-            </ul>
-            <blockquote class="bg-brandBg text-bodyDark italic text-sm p-4 rounded-xl">
-              "The objective was not only to secure coverage, but to make sure each piece of communication told the right story about the brand."
-              <span class="block text-xs not-italic text-slate-400 mt-1">— PR & brand communication approach</span>
+          </div>
+
+
+          <div class="rounded-2xl bg-navy text-white p-6">
+
+            <span class="text-[10px] uppercase tracking-[0.2em] text-gold">
+              Communication principle
+            </span>
+
+            <blockquote class="font-serif text-xl leading-8 mt-4">
+              “The objective was not only to secure coverage,
+              but to make sure each piece of communication told
+              the right story about the brand.”
             </blockquote>
- 
-            <h3 class="font-bold text-navy text-base pt-2">Campaign Impact</h3>
-            <p>Contributed to marketing campaigns through key messages, content direction and promotional materials — campaigns that supported a <strong>25% increase in bookings</strong>.</p>
- 
-            <h3 class="font-bold text-navy text-base pt-2">Reputation Management</h3>
-            <p>PR does not stop when an article goes live. Also handled customer complaints and negative reviews, coordinating timely responses and service recovery to help protect brand reputation.</p>
- 
-            <h3 class="font-bold text-navy text-base pt-2">Measurement & Reporting</h3>
-            <p>After PR activities, tracked media coverage and prepared performance summaries to review what had been published and consolidate campaign results.</p>
- 
-            <h3 class="font-bold text-navy text-base pt-2">Key Capabilities Demonstrated</h3>
-            <ul class="list-disc pl-5 space-y-1">
-              <li><strong>PR Planning & Strategy</strong> — proposed media outlets, developed content angles and key messages, and supported campaign communication.</li>
-              <li><strong>Content Writing & Editing</strong> — developed communication direction and reviewed PR/content materials before publication.</li>
-              <li><strong>Media Relations</strong> — coordinated 50+ PR placements, including media selection, negotiation, briefing, timeline and pre-publication review.</li>
-              <li><strong>Performance Monitoring</strong> — tracked media coverage and prepared post-PR performance summaries.</li>
-              <li><strong>Reputation / Crisis Communication</strong> — handled complaints and negative reviews, coordinated responses and service recovery.</li>
-              <li><strong>Communication & Presentation</strong> — worked across media partners, B2B/OTA partners, digital communities and internal stakeholders.</li>
-            </ul>
- 
-            <h3 class="font-bold text-navy text-base pt-2">Skills</h3>
-            <div class="flex flex-wrap gap-2 pt-1">
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">PR Planning</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Media Relations</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">PR Writing</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Content Editing</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Key Message Development</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Media Monitoring</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Campaign Communication</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Reputation Management</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Stakeholder Coordination</span>
-              <span class="text-xs bg-brandBg text-navy px-3 py-1 rounded-full">Performance Reporting</span>
-            </div>
+
+            <p class="text-[10px] text-white/50 mt-5 uppercase tracking-wider">
+              PR & Brand Communication Approach
+            </p>
+
           </div>
-        </div>`
-    },
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           07 — REPUTATION MANAGEMENT
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-[10px] font-bold text-gold tracking-widest">07</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            Reputation Management
+          </h3>
+        </div>
+
+        <div class="rounded-2xl bg-brandBg p-6">
+
+          <div class="grid md:grid-cols-[1fr_auto] gap-6 items-center">
+
+            <div>
+              <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                Communication after publication
+              </span>
+
+              <h4 class="font-serif text-lg font-bold text-navy mt-2">
+                Protecting the customer-facing brand experience
+              </h4>
+
+              <p class="text-sm text-bodyDark leading-6 mt-2">
+                Also handled customer complaints and negative reviews,
+                coordinating responses and service recovery where needed.
+                This extended the communication role beyond media coverage
+                into reputation management and customer-facing communication.
+              </p>
+            </div>
+
+            <div class="text-center md:px-6 md:border-l border-slate-200">
+              <div class="font-serif text-3xl font-bold text-navy">
+                360°
+              </div>
+              <span class="text-[10px] uppercase tracking-wider text-slate-400">
+                Communication support
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           08 — RESULTS
+      ====================================================== -->
+      <section class="mb-10">
+
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-[10px] font-bold text-gold tracking-widest">08</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            Selected Results
+          </h3>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4">
+
+          <div class="rounded-2xl border border-slate-100 p-5">
+            <span class="text-[10px] uppercase tracking-wider text-slate-400">
+              Media
+            </span>
+
+            <div class="font-serif text-3xl font-bold text-navy mt-2">
+              50+
+            </div>
+
+            <p class="text-xs text-bodyDark leading-5 mt-2">
+              PR placements coordinated from media selection through publication.
+            </p>
+          </div>
+
+
+          <div class="rounded-2xl border border-slate-100 p-5">
+            <span class="text-[10px] uppercase tracking-wider text-slate-400">
+              Campaign
+            </span>
+
+            <div class="font-serif text-3xl font-bold text-navy mt-2">
+              +25%
+            </div>
+
+            <p class="text-xs text-bodyDark leading-5 mt-2">
+              Increase in bookings supported by marketing campaigns.
+            </p>
+          </div>
+
+
+          <div class="rounded-2xl border border-slate-100 p-5">
+            <span class="text-[10px] uppercase tracking-wider text-slate-400">
+              Scope
+            </span>
+
+            <div class="font-serif text-3xl font-bold text-navy mt-2">
+              360°
+            </div>
+
+            <p class="text-xs text-bodyDark leading-5 mt-2">
+              Communication across media, digital communities, partners and
+              customer touchpoints.
+            </p>
+          </div>
+
+        </div>
+
+        <p class="text-[11px] text-slate-400 mt-3 leading-5">
+          Results shown are based on internal campaign and communication tracking.
+          Individual contribution varies by activity and campaign.
+        </p>
+
+      </section>
+
+
+      <!-- =====================================================
+           09 — CAPABILITIES
+      ====================================================== -->
+      <section>
+
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-[10px] font-bold text-gold tracking-widest">09</span>
+          <h3 class="font-serif text-xl font-bold text-navy">
+            Capabilities Demonstrated
+          </h3>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            PR Planning
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Media Relations
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Media Negotiation
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            PR Writing
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Content Editing
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Key Message Development
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Campaign Communication
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Brand Communication
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Media Monitoring
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Reputation Management
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Stakeholder Coordination
+          </span>
+
+          <span class="text-xs bg-brandBg text-navy px-3 py-2 rounded-full">
+            Performance Reporting
+          </span>
+
+        </div>
+
+      </section>
+
+    </div>
+  `
+},
  tos: {
   category: "PR · Content · Media Relations",
   title: "CERAVE & VĨNH TƯỜNG — PR & Content",
